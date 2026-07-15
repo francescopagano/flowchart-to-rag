@@ -1,0 +1,159 @@
+{
+  "algoritmo_id": "algoritmo_7",
+  "label": "SCLC IN STADIO LIMITATO ED ESTESO",
+  "fonte": "AIOM 2024",
+  "nodo_radice": {
+    "id": "root",
+    "label": "SCLC in stadio limitato ed esteso",
+    "tipo": "presentazione",
+    "ambiguita": false,
+    "figli": [
+      {
+        "condizione": null,
+        "nodo": {
+          "id": "malattia_limitata",
+          "label": "Malattia limitata",
+          "tipo": "stadiazione",
+          "ambiguita": false,
+          "figli": [
+            {
+              "condizione": null,
+              "nodo": {
+                "id": "chemio_radio_limitata",
+                "label": "Chemioterapia + Radioterapia",
+                "tipo": "procedura_diagnostica",
+                "ambiguita": false,
+                "figli": [
+                  {
+                    "condizione": "Risposta obiettiva o stabilità di malattia",
+                    "nodo": {
+                      "id": "followup_pci_limitata",
+                      "label": "Follow-up ± PCI¹",
+                      "tipo": "procedura_diagnostica",
+                      "ambiguita": false,
+                      "componenti": [
+                        "PCI raccomandata in caso di risposta obiettiva alla chemioterapia di I linea"
+                      ],
+                      "figli": [],
+                      "next_algoritmo": null
+                    }
+                  },
+                  {
+                    "condizione": "Progressione",
+                    "nodo": {
+                      "id": "terapia_ii_linea_limitata",
+                      "label": "Terapia di II linea",
+                      "tipo": "procedura_diagnostica",
+                      "ambiguita": false,
+                      "figli": [],
+                      "next_algoritmo": null
+                    }
+                  }
+                ],
+                "next_algoritmo": null
+              }
+            }
+          ],
+          "next_algoritmo": null
+        }
+      },
+      {
+        "condizione": null,
+        "nodo": {
+          "id": "malattia_estesa",
+          "label": "Malattia estesa",
+          "tipo": "stadiazione",
+          "ambiguita": false,
+          "figli": [
+            {
+              "condizione": null,
+              "nodo": {
+                "id": "chemio_estesa",
+                "label": "Chemioterapia a base di platino + etoposide + atezolizumab/durvalumab",
+                "tipo": "procedura_diagnostica",
+                "ambiguita": false,
+                "figli": [
+                  {
+                    "condizione": "Risposta obiettiva o stabilità di malattia",
+                    "nodo": {
+                      "id": "mantenimento_pci_estesa",
+                      "label": "Mantenimento² ± PCI¹",
+                      "tipo": "procedura_diagnostica",
+                      "ambiguita": false,
+                      "componenti": [
+                        "Mantenimento con atezolizumab/durvalumab",
+                        "PCI raccomandata in caso di risposta obiettiva alla chemioterapia di I linea"
+                      ],
+                      "figli": [],
+                      "next_algoritmo": null
+                    }
+                  },
+                  {
+                    "condizione": "Progressione",
+                    "nodo": {
+                      "id": "terapia_ii_linea_estesa",
+                      "label": "Terapia di II linea",
+                      "tipo": "procedura_diagnostica",
+                      "ambiguita": false,
+                      "figli": [],
+                      "next_algoritmo": null
+                    }
+                  }
+                ],
+                "next_algoritmo": null
+              }
+            }
+          ],
+          "next_algoritmo": null
+        }
+      },
+      {
+        "condizione": null,
+        "nodo": {
+          "id": "progressione_prima_linea",
+          "label": "Progressione durante o dopo trattamento di prima linea",
+          "tipo": "diagnosi",
+          "ambiguita": false,
+          "figli": [
+            {
+              "condizione": null,
+              "nodo": {
+                "id": "valutazione_intervallo",
+                "label": "Valutazione dell'intervallo dalla fine della precedente chemioterapia",
+                "tipo": "procedura_diagnostica",
+                "ambiguita": false,
+                "figli": [
+                  {
+                    "condizione": "Intervallo >3 mesi",
+                    "nodo": {
+                      "id": "rechallenge_platino",
+                      "label": "Re-challenge con chemioterapia a base di platino",
+                      "tipo": "procedura_diagnostica",
+                      "ambiguita": false,
+                      "figli": [],
+                      "next_algoritmo": null
+                    }
+                  },
+                  {
+                    "condizione": "Intervallo <3 mesi",
+                    "nodo": {
+                      "id": "topotecan_altro",
+                      "label": "Topotecan o altro agente attivo o studio clinico",
+                      "tipo": "procedura_diagnostica",
+                      "ambiguita": false,
+                      "figli": [],
+                      "next_algoritmo": null
+                    }
+                  }
+                ],
+                "next_algoritmo": null
+              }
+            }
+          ],
+          "next_algoritmo": null
+        }
+      }
+    ],
+    "next_algoritmo": null
+  }
+}

@@ -1,0 +1,1457 @@
+{
+  "meta": {
+    "fonte": "AIOM 2024",
+    "algoritmi_totali": 7,
+    "generated_at": "2026-07-03T09:09:42.294808+00:00",
+    "cross_references": [
+      {
+        "from": "algoritmo_1/n1/n3/n4/n5",
+        "to": "algoritmo_7"
+      }
+    ]
+  },
+  "algoritmi": {
+    "algoritmo_1": {
+      "algoritmo_id": "algoritmo_1",
+      "label": "Algoritmo 1 - Diagnosi e Stadiazione",
+      "fonte": "AIOM 2024",
+      "nodo_radice": {
+        "id": "n1",
+        "label": "Esami diagnostici: esame obiettivo, Rx torace, TC torace, fibrobroncoscopia, esame citologico escreato (facoltativo), agoaspirato transtoracico (facoltativo)",
+        "tipo": "procedura_diagnostica",
+        "componenti": [
+          "esame obiettivo",
+          "Rx torace",
+          "TC torace",
+          "fibrobroncoscopia",
+          "esame citologico escreato (facoltativo)",
+          "agoaspirato transtoracico (facoltativo)"
+        ],
+        "ambiguita": false,
+        "figli": [
+          {
+            "condizione": null,
+            "nodo": {
+              "id": "n2",
+              "label": "No neoplasia primitiva polmonare",
+              "tipo": "esito_negativo",
+              "ambiguita": false,
+              "figli": [],
+              "next_algoritmo": null
+            }
+          },
+          {
+            "condizione": null,
+            "nodo": {
+              "id": "n3",
+              "label": "NSCLC",
+              "tipo": "diagnosi",
+              "ambiguita": false,
+              "figli": [
+                {
+                  "condizione": null,
+                  "nodo": {
+                    "id": "n4",
+                    "label": "Esami di stadiazione: Valutazione mediastinica; TC collo, torace, addome superiore; TC/RM encefalo",
+                    "tipo": "stadiazione",
+                    "componenti": [
+                      "Valutazione mediastinica",
+                      "TC collo, torace, addome superiore",
+                      "TC/RM encefalo"
+                    ],
+                    "ambiguita": false,
+                    "figli": [
+                      {
+                        "condizione": null,
+                        "nodo": {
+                          "id": "n5",
+                          "label": "ALGORITMO 2 - Profilazione Molecolare",
+                          "tipo": "riferimento_esterno",
+                          "ambiguita": false,
+                          "figli": [],
+                          "next_algoritmo": "Algoritmo 2",
+                          "next_algoritmo_id": "algoritmo_7"
+                        }
+                      },
+                      {
+                        "condizione": null,
+                        "nodo": {
+                          "id": "n6",
+                          "label": "ALGORITMO 3 - NSCLC Stadio Precoce",
+                          "tipo": "riferimento_esterno",
+                          "ambiguita": false,
+                          "figli": [],
+                          "next_algoritmo": "Algoritmo 3",
+                          "next_algoritmo_id": null
+                        }
+                      },
+                      {
+                        "condizione": null,
+                        "nodo": {
+                          "id": "n7",
+                          "label": "ALGORITMO 4 - NSCLC Stadio Localmente Avanzato",
+                          "tipo": "riferimento_esterno",
+                          "ambiguita": false,
+                          "figli": [],
+                          "next_algoritmo": "Algoritmo 4",
+                          "next_algoritmo_id": null
+                        }
+                      },
+                      {
+                        "condizione": null,
+                        "nodo": {
+                          "id": "n8",
+                          "label": "ALGORITMO 5 - NSCLC Avanzato, Malattia Oncogene-Addicted",
+                          "tipo": "riferimento_esterno",
+                          "ambiguita": false,
+                          "figli": [],
+                          "next_algoritmo": "Algoritmo 5",
+                          "next_algoritmo_id": null
+                        }
+                      },
+                      {
+                        "condizione": null,
+                        "nodo": {
+                          "id": "n9",
+                          "label": "ALGORITMO 6 - NSCLC Avanzato, Malattia NON Oncogene-Addicted",
+                          "tipo": "riferimento_esterno",
+                          "ambiguita": false,
+                          "figli": [],
+                          "next_algoritmo": "Algoritmo 6",
+                          "next_algoritmo_id": null
+                        }
+                      }
+                    ],
+                    "next_algoritmo": null
+                  }
+                }
+              ],
+              "next_algoritmo": null
+            }
+          },
+          {
+            "condizione": null,
+            "nodo": {
+              "id": "n10",
+              "label": "SCLC",
+              "tipo": "diagnosi",
+              "ambiguita": false,
+              "figli": [
+                {
+                  "condizione": null,
+                  "nodo": {
+                    "id": "n11",
+                    "label": "Esami di stadiazione: TC collo, torace, addome completo; TC/RM encefalo; PET-TC",
+                    "tipo": "stadiazione",
+                    "componenti": [
+                      "TC collo, torace, addome completo",
+                      "TC/RM encefalo",
+                      "PET-TC"
+                    ],
+                    "ambiguita": false,
+                    "figli": [
+                      {
+                        "condizione": null,
+                        "nodo": {
+                          "id": "n12",
+                          "label": "ALGORITMO 7 - SCLC Stadio Limitato ed Esteso",
+                          "tipo": "riferimento_esterno",
+                          "ambiguita": false,
+                          "figli": [],
+                          "next_algoritmo": "Algoritmo 7",
+                          "next_algoritmo_id": null
+                        }
+                      }
+                    ],
+                    "next_algoritmo": null
+                  }
+                }
+              ],
+              "next_algoritmo": null
+            }
+          }
+        ],
+        "next_algoritmo": null
+      }
+    },
+    "algoritmo_2": {
+      "algoritmo_id": "algoritmo_2",
+      "label": "NSCLC - Biomarcatori e Metodiche diagnostiche per malattia metastatica e non metastatica",
+      "fonte": "AIOM 2024",
+      "nodo_radice": {
+        "id": "root",
+        "label": "Punto di partenza: tipo di malattia NSCLC",
+        "tipo": "presentazione",
+        "ambiguita": false,
+        "figli": [
+          {
+            "condizione": "NSCLC, malattia metastatica",
+            "nodo": {
+              "id": "metastatica",
+              "label": "NSCLC, malattia metastatica",
+              "tipo": "diagnosi",
+              "ambiguita": false,
+              "figli": [
+                {
+                  "condizione": "Istotipo: Squamoso, eta inferiore a 50 anni, non fumatore o lieve fumatore",
+                  "nodo": {
+                    "id": "meta_squamoso_giovane",
+                    "label": "Istotipo: Squamoso, eta inferiore a 50 anni, non fumatore o lieve fumatore",
+                    "tipo": "stadiazione",
+                    "ambiguita": false,
+                    "figli": [
+                      {
+                        "condizione": null,
+                        "nodo": {
+                          "id": "biomarcatori_full",
+                          "label": "Biomarcatori: EGFR, ALK, ROS1, BRAF, NTRK, RET, METex14, KRASp.G12C, PD-L1",
+                          "tipo": "procedura_diagnostica",
+                          "componenti": [
+                            "EGFR",
+                            "ALK",
+                            "ROS1",
+                            "BRAF",
+                            "NTRK",
+                            "RET",
+                            "METex14",
+                            "KRASp.G12C",
+                            "PD-L1"
+                          ],
+                          "ambiguita": false,
+                          "figli": [
+                            {
+                              "condizione": null,
+                              "nodo": {
+                                "id": "metodica_ngs_full",
+                                "label": "Metodica: NGS + IHC PD-L1 su tessuto tumorale; NGS su DNA tumorale circolante, se tessuto non disponibile",
+                                "tipo": "procedura_diagnostica",
+                                "ambiguita": false,
+                                "figli": [],
+                                "next_algoritmo": null
+                              }
+                            }
+                          ],
+                          "next_algoritmo": null
+                        }
+                      }
+                    ],
+                    "next_algoritmo": null
+                  }
+                },
+                {
+                  "condizione": "Istotipo: Non-squamoso",
+                  "nodo": {
+                    "id": "meta_nonsquamoso",
+                    "label": "Istotipo: Non-squamoso",
+                    "tipo": "stadiazione",
+                    "ambiguita": false,
+                    "figli": [
+                      {
+                        "condizione": null,
+                        "nodo": {
+                          "id": "biomarcatori_full_ref",
+                          "label": "Biomarcatori: EGFR, ALK, ROS1, BRAF, NTRK, RET, METex14, KRASp.G12C, PD-L1",
+                          "tipo": "procedura_diagnostica",
+                          "componenti": [
+                            "EGFR",
+                            "ALK",
+                            "ROS1",
+                            "BRAF",
+                            "NTRK",
+                            "RET",
+                            "METex14",
+                            "KRASp.G12C",
+                            "PD-L1"
+                          ],
+                          "ambiguita": false,
+                          "figli": [
+                            {
+                              "condizione": null,
+                              "nodo": {
+                                "id": "metodica_ngs_full_ref",
+                                "label": "Metodica: NGS + IHC PD-L1 su tessuto tumorale; NGS su DNA tumorale circolante, se tessuto non disponibile",
+                                "tipo": "procedura_diagnostica",
+                                "ambiguita": false,
+                                "figli": [],
+                                "next_algoritmo": null
+                              }
+                            }
+                          ],
+                          "next_algoritmo": null
+                        }
+                      }
+                    ],
+                    "next_algoritmo": null
+                  }
+                },
+                {
+                  "condizione": "Istotipo: Squamoso, eta superiore a 50 anni, fumatore",
+                  "nodo": {
+                    "id": "meta_squamoso_anziano",
+                    "label": "Istotipo: Squamoso, eta superiore a 50 anni, fumatore",
+                    "tipo": "stadiazione",
+                    "ambiguita": false,
+                    "figli": [
+                      {
+                        "condizione": null,
+                        "nodo": {
+                          "id": "biomarcatori_pdl1_kras",
+                          "label": "Biomarcatori: PD-L1, valutare alcuni biomarcatori (es. KRASp.G12C)",
+                          "tipo": "procedura_diagnostica",
+                          "componenti": [
+                            "PD-L1",
+                            "KRASp.G12C"
+                          ],
+                          "ambiguita": false,
+                          "figli": [
+                            {
+                              "condizione": null,
+                              "nodo": {
+                                "id": "metodica_ngs_altra",
+                                "label": "Metodica: NGS o altra metodica + IHC PD-L1 su tessuto tumorale; NGS su DNA tumorale circolante, se tessuto non disponibile",
+                                "tipo": "procedura_diagnostica",
+                                "ambiguita": false,
+                                "figli": [],
+                                "next_algoritmo": null
+                              }
+                            }
+                          ],
+                          "next_algoritmo": null
+                        }
+                      }
+                    ],
+                    "next_algoritmo": null
+                  }
+                }
+              ],
+              "next_algoritmo": null
+            }
+          },
+          {
+            "condizione": "NSCLC, malattia NON metastatica",
+            "nodo": {
+              "id": "non_metastatica",
+              "label": "NSCLC, malattia NON metastatica",
+              "tipo": "diagnosi",
+              "ambiguita": false,
+              "figli": [
+                {
+                  "condizione": null,
+                  "nodo": {
+                    "id": "non_meta_istotipo",
+                    "label": "Istotipo: Squamoso e non-squamoso",
+                    "tipo": "stadiazione",
+                    "ambiguita": false,
+                    "figli": [
+                      {
+                        "condizione": null,
+                        "nodo": {
+                          "id": "biomarcatori_base",
+                          "label": "Biomarcatori: EGFR, ALK, PD-L1",
+                          "tipo": "procedura_diagnostica",
+                          "componenti": [
+                            "EGFR",
+                            "ALK",
+                            "PD-L1"
+                          ],
+                          "ambiguita": false,
+                          "figli": [
+                            {
+                              "condizione": null,
+                              "nodo": {
+                                "id": "metodica_singlegene",
+                                "label": "Metodica single gene o NGS + IHC PD-L1 su tessuto tumorale",
+                                "tipo": "procedura_diagnostica",
+                                "ambiguita": false,
+                                "figli": [],
+                                "next_algoritmo": null
+                              }
+                            }
+                          ],
+                          "next_algoritmo": null
+                        }
+                      }
+                    ],
+                    "next_algoritmo": null
+                  }
+                }
+              ],
+              "next_algoritmo": null
+            }
+          }
+        ],
+        "next_algoritmo": null
+      }
+    },
+    "algoritmo_3": {
+      "algoritmo_id": "algoritmo_3",
+      "label": "Malattia localizzata - Gestione terapeutica",
+      "fonte": "AIOM 2024",
+      "nodo_radice": {
+        "id": "n1",
+        "label": "Malattia localizzata",
+        "tipo": "presentazione",
+        "ambiguita": false,
+        "figli": [
+          {
+            "condizione": null,
+            "nodo": {
+              "id": "n2",
+              "label": "Operabilita biologica, anatomica, funzionale",
+              "tipo": "procedura_diagnostica",
+              "ambiguita": false,
+              "figli": [
+                {
+                  "condizione": "Si",
+                  "nodo": {
+                    "id": "n3",
+                    "label": "Chirurgia",
+                    "tipo": "procedura_diagnostica",
+                    "ambiguita": false,
+                    "figli": [
+                      {
+                        "condizione": null,
+                        "nodo": {
+                          "id": "n5",
+                          "label": "Stadio II-III",
+                          "tipo": "stadiazione",
+                          "ambiguita": false,
+                          "figli": [
+                            {
+                              "condizione": null,
+                              "nodo": {
+                                "id": "n7",
+                                "label": "Indicazione a chemioterapia adiuvante?",
+                                "tipo": "procedura_diagnostica",
+                                "ambiguita": false,
+                                "figli": [
+                                  {
+                                    "condizione": "Si",
+                                    "nodo": {
+                                      "id": "n8",
+                                      "label": "EGFR mutato, Del19 o L858R",
+                                      "tipo": "diagnosi",
+                                      "ambiguita": false,
+                                      "figli": [
+                                        {
+                                          "condizione": null,
+                                          "nodo": {
+                                            "id": "n11",
+                                            "label": "Chemioterapia a base di platino",
+                                            "tipo": "procedura_diagnostica",
+                                            "ambiguita": false,
+                                            "figli": [
+                                              {
+                                                "condizione": null,
+                                                "nodo": {
+                                                  "id": "n14",
+                                                  "label": "Osimertinib per 3 anni",
+                                                  "tipo": "procedura_diagnostica",
+                                                  "ambiguita": false,
+                                                  "figli": [],
+                                                  "next_algoritmo": null
+                                                }
+                                              }
+                                            ],
+                                            "next_algoritmo": null
+                                          }
+                                        }
+                                      ],
+                                      "next_algoritmo": null
+                                    }
+                                  },
+                                  {
+                                    "condizione": "Si",
+                                    "nodo": {
+                                      "id": "n9",
+                                      "label": "EGFR/ALK wild-type, PD-L1 uguale o superiore al 50%",
+                                      "tipo": "diagnosi",
+                                      "ambiguita": false,
+                                      "figli": [
+                                        {
+                                          "condizione": null,
+                                          "nodo": {
+                                            "id": "n12",
+                                            "label": "Chemioterapia a base di platino",
+                                            "tipo": "procedura_diagnostica",
+                                            "ambiguita": false,
+                                            "figli": [
+                                              {
+                                                "condizione": null,
+                                                "nodo": {
+                                                  "id": "n15",
+                                                  "label": "Atezolizumab per 1 anno",
+                                                  "tipo": "procedura_diagnostica",
+                                                  "ambiguita": false,
+                                                  "figli": [],
+                                                  "next_algoritmo": null
+                                                }
+                                              }
+                                            ],
+                                            "next_algoritmo": null
+                                          }
+                                        }
+                                      ],
+                                      "next_algoritmo": null
+                                    }
+                                  },
+                                  {
+                                    "condizione": "Si",
+                                    "nodo": {
+                                      "id": "n10",
+                                      "label": "EGFR/ALK wild-type, PD-L1 inferiore al 50%",
+                                      "tipo": "diagnosi",
+                                      "ambiguita": false,
+                                      "figli": [
+                                        {
+                                          "condizione": null,
+                                          "nodo": {
+                                            "id": "n13",
+                                            "label": "Chemioterapia a base di platino",
+                                            "tipo": "procedura_diagnostica",
+                                            "ambiguita": false,
+                                            "figli": [
+                                              {
+                                                "condizione": null,
+                                                "nodo": {
+                                                  "id": "n16",
+                                                  "label": "Follow-up",
+                                                  "tipo": "esito_negativo",
+                                                  "ambiguita": false,
+                                                  "figli": [],
+                                                  "next_algoritmo": null
+                                                }
+                                              }
+                                            ],
+                                            "next_algoritmo": null
+                                          }
+                                        }
+                                      ],
+                                      "next_algoritmo": null
+                                    }
+                                  },
+                                  {
+                                    "condizione": "No",
+                                    "nodo": {
+                                      "id": "n16b",
+                                      "label": "Follow-up",
+                                      "tipo": "esito_negativo",
+                                      "ambiguita": false,
+                                      "figli": [],
+                                      "next_algoritmo": null
+                                    }
+                                  }
+                                ],
+                                "next_algoritmo": null
+                              }
+                            }
+                          ],
+                          "next_algoritmo": null
+                        }
+                      }
+                    ],
+                    "next_algoritmo": null
+                  }
+                },
+                {
+                  "condizione": "No",
+                  "nodo": {
+                    "id": "n4",
+                    "label": "Radioterapia SBRT",
+                    "tipo": "procedura_diagnostica",
+                    "ambiguita": false,
+                    "figli": [
+                      {
+                        "condizione": null,
+                        "nodo": {
+                          "id": "n6",
+                          "label": "Stadio I",
+                          "tipo": "stadiazione",
+                          "ambiguita": false,
+                          "figli": [
+                            {
+                              "condizione": null,
+                              "nodo": {
+                                "id": "n16c",
+                                "label": "Follow-up",
+                                "tipo": "esito_negativo",
+                                "ambiguita": false,
+                                "figli": [],
+                                "next_algoritmo": null
+                              }
+                            }
+                          ],
+                          "next_algoritmo": null
+                        }
+                      }
+                    ],
+                    "next_algoritmo": null
+                  }
+                }
+              ],
+              "next_algoritmo": null
+            }
+          }
+        ],
+        "next_algoritmo": null
+      }
+    },
+    "algoritmo_4": {
+      "algoritmo_id": "algoritmo_4",
+      "label": "Malattia localmente avanzata - NSCLC",
+      "fonte": "AIOM 2024",
+      "nodo_radice": {
+        "id": "n1",
+        "label": "Malattia localmente avanzata",
+        "tipo": "presentazione",
+        "ambiguita": false,
+        "figli": [
+          {
+            "condizione": "Non resecabile",
+            "nodo": {
+              "id": "n2",
+              "label": "Non resecabile",
+              "tipo": "stadiazione",
+              "ambiguita": false,
+              "figli": [
+                {
+                  "condizione": null,
+                  "nodo": {
+                    "id": "n3",
+                    "label": "Chemio-radioterapia",
+                    "tipo": "procedura_diagnostica",
+                    "ambiguita": false,
+                    "figli": [
+                      {
+                        "condizione": "Risposta obiettiva o stabilita di malattia",
+                        "nodo": {
+                          "id": "n4",
+                          "label": "Consolidamento con durvalumab, se PD-L1 uguale o superiore all'1%",
+                          "tipo": "procedura_diagnostica",
+                          "ambiguita": false,
+                          "figli": [],
+                          "next_algoritmo": null
+                        }
+                      }
+                    ],
+                    "next_algoritmo": null
+                  }
+                }
+              ],
+              "next_algoritmo": null
+            }
+          },
+          {
+            "condizione": "Resecabile",
+            "nodo": {
+              "id": "n5",
+              "label": "Resecabile",
+              "tipo": "stadiazione",
+              "ambiguita": false,
+              "figli": [
+                {
+                  "condizione": null,
+                  "nodo": {
+                    "id": "n6",
+                    "label": "Chemioterapia o chemio-radioterapia neoadiuvante",
+                    "tipo": "procedura_diagnostica",
+                    "ambiguita": false,
+                    "figli": [
+                      {
+                        "condizione": null,
+                        "nodo": {
+                          "id": "n7",
+                          "label": "Chirurgia",
+                          "tipo": "procedura_diagnostica",
+                          "ambiguita": false,
+                          "figli": [],
+                          "next_algoritmo": null
+                        }
+                      }
+                    ],
+                    "next_algoritmo": null
+                  }
+                },
+                {
+                  "condizione": null,
+                  "nodo": {
+                    "id": "n8",
+                    "label": "Chirurgia",
+                    "tipo": "procedura_diagnostica",
+                    "ambiguita": false,
+                    "figli": [
+                      {
+                        "condizione": null,
+                        "nodo": {
+                          "id": "n9",
+                          "label": "ALGORITMO 3 - NSCLC Stadio Precoce",
+                          "tipo": "riferimento_esterno",
+                          "ambiguita": false,
+                          "figli": [],
+                          "next_algoritmo": "ALGORITMO 3 - NSCLC Stadio Precoce",
+                          "next_algoritmo_id": null
+                        }
+                      }
+                    ],
+                    "next_algoritmo": null
+                  }
+                }
+              ],
+              "next_algoritmo": null
+            }
+          }
+        ],
+        "next_algoritmo": null
+      }
+    },
+    "algoritmo_5": {
+      "algoritmo_id": "algoritmo_5",
+      "label": "Trattamento per alterazioni molecolari specifiche - I linea e progressione",
+      "fonte": "AIOM 2024",
+      "nodo_radice": {
+        "id": "root",
+        "label": "Alterazioni molecolari specifiche",
+        "tipo": "presentazione",
+        "ambiguita": false,
+        "figli": [
+          {
+            "condizione": null,
+            "nodo": {
+              "id": "branch_egfr_ins20",
+              "label": "Inserzioni esone 20 di EGFR",
+              "tipo": "diagnosi",
+              "ambiguita": false,
+              "figli": [
+                {
+                  "condizione": "I linea",
+                  "nodo": {
+                    "id": "tx_egfr_ins20_1l",
+                    "label": "Chemioterapia a base di platino",
+                    "tipo": "procedura_diagnostica",
+                    "ambiguita": false,
+                    "figli": [
+                      {
+                        "condizione": "Progressione",
+                        "nodo": {
+                          "id": "tx_egfr_ins20_2l",
+                          "label": "Amivantamab",
+                          "tipo": "procedura_diagnostica",
+                          "ambiguita": false,
+                          "figli": [],
+                          "next_algoritmo": null
+                        }
+                      }
+                    ],
+                    "next_algoritmo": null
+                  }
+                }
+              ],
+              "next_algoritmo": null
+            }
+          },
+          {
+            "condizione": null,
+            "nodo": {
+              "id": "branch_egfr_classic",
+              "label": "Mutazioni classiche di EGFR",
+              "tipo": "diagnosi",
+              "ambiguita": false,
+              "figli": [
+                {
+                  "condizione": "I linea",
+                  "nodo": {
+                    "id": "tx_egfr_classic_1l",
+                    "label": "Osimertinib",
+                    "tipo": "procedura_diagnostica",
+                    "ambiguita": false,
+                    "figli": [
+                      {
+                        "condizione": "Progressione",
+                        "nodo": {
+                          "id": "tx_egfr_classic_2l",
+                          "label": "Chemioterapia a base di platino",
+                          "tipo": "procedura_diagnostica",
+                          "ambiguita": false,
+                          "figli": [],
+                          "next_algoritmo": null
+                        }
+                      }
+                    ],
+                    "next_algoritmo": null
+                  }
+                }
+              ],
+              "next_algoritmo": null
+            }
+          },
+          {
+            "condizione": null,
+            "nodo": {
+              "id": "branch_braf_v600",
+              "label": "Mutazioni di BRAF-V600",
+              "tipo": "diagnosi",
+              "ambiguita": false,
+              "figli": [
+                {
+                  "condizione": "I linea",
+                  "nodo": {
+                    "id": "tx_braf_v600_1l",
+                    "label": "Dabrafenib con trametinib",
+                    "tipo": "procedura_diagnostica",
+                    "ambiguita": false,
+                    "figli": [
+                      {
+                        "condizione": "Progressione",
+                        "nodo": {
+                          "id": "tx_braf_v600_2l",
+                          "label": "Immunoterapia e/o chemioterapia a base di platino",
+                          "tipo": "procedura_diagnostica",
+                          "ambiguita": false,
+                          "figli": [],
+                          "next_algoritmo": null
+                        }
+                      }
+                    ],
+                    "next_algoritmo": null
+                  }
+                }
+              ],
+              "next_algoritmo": null
+            }
+          },
+          {
+            "condizione": null,
+            "nodo": {
+              "id": "branch_ntrk",
+              "label": "Riarrangiamenti di NTRK",
+              "tipo": "diagnosi",
+              "ambiguita": false,
+              "figli": [
+                {
+                  "condizione": "I linea",
+                  "nodo": {
+                    "id": "tx_ntrk_1l",
+                    "label": "Entrectinib, larotrectinib",
+                    "tipo": "procedura_diagnostica",
+                    "ambiguita": false,
+                    "figli": [
+                      {
+                        "condizione": "Progressione",
+                        "nodo": {
+                          "id": "tx_ntrk_2l",
+                          "label": "Chemioterapia a base di platino",
+                          "tipo": "procedura_diagnostica",
+                          "ambiguita": false,
+                          "figli": [],
+                          "next_algoritmo": null
+                        }
+                      }
+                    ],
+                    "next_algoritmo": null
+                  }
+                }
+              ],
+              "next_algoritmo": null
+            }
+          },
+          {
+            "condizione": null,
+            "nodo": {
+              "id": "branch_egfr_uncommon",
+              "label": "Mutazioni non comuni di EGFR, esoni 18-21, escluso esone 20",
+              "tipo": "diagnosi",
+              "ambiguita": false,
+              "figli": [
+                {
+                  "condizione": "I linea",
+                  "nodo": {
+                    "id": "tx_egfr_uncommon_1l",
+                    "label": "Afatinib, osimertinib",
+                    "tipo": "procedura_diagnostica",
+                    "ambiguita": false,
+                    "figli": [
+                      {
+                        "condizione": "Progressione",
+                        "nodo": {
+                          "id": "tx_egfr_uncommon_2l",
+                          "label": "Chemioterapia a base di platino",
+                          "tipo": "procedura_diagnostica",
+                          "ambiguita": false,
+                          "figli": [],
+                          "next_algoritmo": null
+                        }
+                      }
+                    ],
+                    "next_algoritmo": null
+                  }
+                }
+              ],
+              "next_algoritmo": null
+            }
+          },
+          {
+            "condizione": null,
+            "nodo": {
+              "id": "branch_kras_g12c",
+              "label": "Mutazione KRASp.G12C",
+              "tipo": "diagnosi",
+              "ambiguita": false,
+              "figli": [
+                {
+                  "condizione": "I linea",
+                  "nodo": {
+                    "id": "tx_kras_g12c_1l",
+                    "label": "Immunoterapia e/o chemioterapia a base di platino",
+                    "tipo": "procedura_diagnostica",
+                    "ambiguita": false,
+                    "figli": [
+                      {
+                        "condizione": "Progressione",
+                        "nodo": {
+                          "id": "tx_kras_g12c_2l",
+                          "label": "Sotorasib",
+                          "tipo": "procedura_diagnostica",
+                          "ambiguita": false,
+                          "figli": [],
+                          "next_algoritmo": null
+                        }
+                      }
+                    ],
+                    "next_algoritmo": null
+                  }
+                }
+              ],
+              "next_algoritmo": null
+            }
+          },
+          {
+            "condizione": null,
+            "nodo": {
+              "id": "branch_ret",
+              "label": "Riarrangiamenti di RET",
+              "tipo": "diagnosi",
+              "ambiguita": false,
+              "figli": [
+                {
+                  "condizione": "I linea",
+                  "nodo": {
+                    "id": "tx_ret_1l",
+                    "label": "Chemioterapia a base di platino",
+                    "tipo": "procedura_diagnostica",
+                    "ambiguita": false,
+                    "figli": [
+                      {
+                        "condizione": "Progressione",
+                        "nodo": {
+                          "id": "tx_ret_2l",
+                          "label": "Selpercatinib",
+                          "tipo": "procedura_diagnostica",
+                          "ambiguita": false,
+                          "figli": [],
+                          "next_algoritmo": null
+                        }
+                      }
+                    ],
+                    "next_algoritmo": null
+                  }
+                }
+              ],
+              "next_algoritmo": null
+            }
+          },
+          {
+            "condizione": null,
+            "nodo": {
+              "id": "branch_alk",
+              "label": "Riarrangiamenti di ALK",
+              "tipo": "diagnosi",
+              "ambiguita": false,
+              "figli": [
+                {
+                  "condizione": "I linea",
+                  "nodo": {
+                    "id": "tx_alk_1l",
+                    "label": "Alectinib, brigatinib, lorlatinib",
+                    "tipo": "procedura_diagnostica",
+                    "ambiguita": false,
+                    "figli": [
+                      {
+                        "condizione": "Progressione",
+                        "nodo": {
+                          "id": "tx_alk_2l",
+                          "label": "Lorlatinib o chemioterapia a base di platino",
+                          "tipo": "procedura_diagnostica",
+                          "ambiguita": false,
+                          "figli": [],
+                          "next_algoritmo": null
+                        }
+                      }
+                    ],
+                    "next_algoritmo": null
+                  }
+                }
+              ],
+              "next_algoritmo": null
+            }
+          },
+          {
+            "condizione": null,
+            "nodo": {
+              "id": "branch_ros1",
+              "label": "Riarrangiamenti di ROS1",
+              "tipo": "diagnosi",
+              "ambiguita": false,
+              "figli": [
+                {
+                  "condizione": "I linea",
+                  "nodo": {
+                    "id": "tx_ros1_1l",
+                    "label": "Entrectinib, crizotinib",
+                    "tipo": "procedura_diagnostica",
+                    "ambiguita": false,
+                    "figli": [
+                      {
+                        "condizione": "Progressione",
+                        "nodo": {
+                          "id": "tx_ros1_2l",
+                          "label": "Chemioterapia a base di platino",
+                          "tipo": "procedura_diagnostica",
+                          "ambiguita": false,
+                          "figli": [],
+                          "next_algoritmo": null
+                        }
+                      }
+                    ],
+                    "next_algoritmo": null
+                  }
+                }
+              ],
+              "next_algoritmo": null
+            }
+          },
+          {
+            "condizione": null,
+            "nodo": {
+              "id": "branch_met_skip14",
+              "label": "Skipping esone 14 di MET",
+              "tipo": "diagnosi",
+              "ambiguita": false,
+              "figli": [
+                {
+                  "condizione": "I linea",
+                  "nodo": {
+                    "id": "tx_met_skip14_1l",
+                    "label": "Immunoterapia e/o chemioterapia a base di platino",
+                    "tipo": "procedura_diagnostica",
+                    "ambiguita": false,
+                    "figli": [
+                      {
+                        "condizione": "Progressione",
+                        "nodo": {
+                          "id": "tx_met_skip14_2l",
+                          "label": "Capmatinib, tepotinib",
+                          "tipo": "procedura_diagnostica",
+                          "ambiguita": false,
+                          "figli": [],
+                          "next_algoritmo": null
+                        }
+                      }
+                    ],
+                    "next_algoritmo": null
+                  }
+                }
+              ],
+              "next_algoritmo": null
+            }
+          }
+        ],
+        "next_algoritmo": null
+      }
+    },
+    "algoritmo_6": {
+      "algoritmo_id": "algoritmo_6",
+      "label": "Algoritmo 2",
+      "fonte": "AIOM 2024",
+      "nodo_radice": {
+        "id": "root",
+        "label": "Selezione per PD-L1 e istologia",
+        "tipo": "presentazione",
+        "ambiguita": false,
+        "figli": [
+          {
+            "condizione": "PD-L1 uguale o superiore al 50%",
+            "nodo": {
+              "id": "pdl1_alto",
+              "label": "PD-L1 uguale o superiore al 50%",
+              "tipo": "stadiazione",
+              "ambiguita": false,
+              "figli": [
+                {
+                  "condizione": "I linea",
+                  "nodo": {
+                    "id": "trattamento_1a",
+                    "label": "Pembrolizumab, cemiplimab, atezolizumab",
+                    "tipo": "procedura_diagnostica",
+                    "ambiguita": false,
+                    "figli": [
+                      {
+                        "condizione": "Progressione",
+                        "nodo": {
+                          "id": "progressione_1a",
+                          "label": "Chemioterapia a base di platino",
+                          "tipo": "procedura_diagnostica",
+                          "ambiguita": false,
+                          "figli": [],
+                          "next_algoritmo": null
+                        }
+                      }
+                    ],
+                    "next_algoritmo": null
+                  }
+                }
+              ],
+              "next_algoritmo": null
+            }
+          },
+          {
+            "condizione": "PD-L1 inferiore al 50% o non determinabile, istologia non-squamosa",
+            "nodo": {
+              "id": "pdl1_basso_nonsquamosa",
+              "label": "PD-L1 inferiore al 50% o non determinabile, istologia non-squamosa",
+              "tipo": "stadiazione",
+              "ambiguita": false,
+              "figli": [
+                {
+                  "condizione": "I linea, 4 cicli",
+                  "nodo": {
+                    "id": "trattamento_2a",
+                    "label": "Chemioterapia a base di platino con pemetrexed e pembrolizumab",
+                    "tipo": "procedura_diagnostica",
+                    "ambiguita": false,
+                    "figli": [
+                      {
+                        "condizione": "Risposta o stabilità",
+                        "nodo": {
+                          "id": "mantenimento_2a",
+                          "label": "Mantenimento: pemetrexed con pembrolizumab",
+                          "tipo": "procedura_diagnostica",
+                          "ambiguita": false,
+                          "figli": [],
+                          "next_algoritmo": null
+                        }
+                      },
+                      {
+                        "condizione": "Progressione",
+                        "nodo": {
+                          "id": "progressione_2a",
+                          "label": "Docetaxel con nintedanib, oppure nivolumab, pembrolizumab o atezolizumab",
+                          "tipo": "procedura_diagnostica",
+                          "ambiguita": false,
+                          "figli": [],
+                          "next_algoritmo": null
+                        }
+                      }
+                    ],
+                    "next_algoritmo": null
+                  }
+                }
+              ],
+              "next_algoritmo": null
+            }
+          },
+          {
+            "condizione": "PD-L1 inferiore al 50% o non determinabile, squamosa e non-squamosa",
+            "nodo": {
+              "id": "pdl1_basso_sq_nonsq",
+              "label": "PD-L1 inferiore al 50% o non determinabile, squamosa e non-squamosa",
+              "tipo": "stadiazione",
+              "ambiguita": false,
+              "figli": [
+                {
+                  "condizione": "I linea, 2 cicli",
+                  "nodo": {
+                    "id": "trattamento_3a",
+                    "label": "Nivolumab con ipilimumab e chemioterapia a base di platino",
+                    "tipo": "procedura_diagnostica",
+                    "ambiguita": false,
+                    "figli": [
+                      {
+                        "condizione": "Risposta o stabilità",
+                        "nodo": {
+                          "id": "mantenimento_3a",
+                          "label": "Mantenimento: nivolumab con ipilimumab",
+                          "tipo": "procedura_diagnostica",
+                          "ambiguita": false,
+                          "figli": [],
+                          "next_algoritmo": null
+                        }
+                      },
+                      {
+                        "condizione": "Progressione",
+                        "nodo": {
+                          "id": "progressione_3a",
+                          "label": "Docetaxel con nivolumab, pembrolizumab o atezolizumab",
+                          "tipo": "procedura_diagnostica",
+                          "ambiguita": false,
+                          "figli": [],
+                          "next_algoritmo": null
+                        }
+                      }
+                    ],
+                    "next_algoritmo": null
+                  }
+                }
+              ],
+              "next_algoritmo": null
+            }
+          },
+          {
+            "condizione": "PD-L1 dall'1% al 49%, squamosa e non-squamosa",
+            "nodo": {
+              "id": "pdl1_1_49_sq_nonsq",
+              "label": "PD-L1 dall'1% al 49%, squamosa e non-squamosa",
+              "tipo": "stadiazione",
+              "ambiguita": false,
+              "figli": [
+                {
+                  "condizione": "I linea, 4 cicli",
+                  "nodo": {
+                    "id": "trattamento_4a",
+                    "label": "Cemiplimab con chemioterapia a base di platino",
+                    "tipo": "procedura_diagnostica",
+                    "ambiguita": false,
+                    "figli": [
+                      {
+                        "condizione": "Risposta o stabilità",
+                        "nodo": {
+                          "id": "mantenimento_4a",
+                          "label": "Mantenimento: cemiplimab, con o senza pemetrexed se non-squamosa",
+                          "tipo": "procedura_diagnostica",
+                          "ambiguita": false,
+                          "figli": [],
+                          "next_algoritmo": null
+                        }
+                      },
+                      {
+                        "condizione": "Progressione",
+                        "nodo": {
+                          "id": "progressione_4a",
+                          "label": "Docetaxel con nivolumab, pembrolizumab o atezolizumab",
+                          "tipo": "procedura_diagnostica",
+                          "ambiguita": false,
+                          "figli": [],
+                          "next_algoritmo": null
+                        }
+                      }
+                    ],
+                    "next_algoritmo": null
+                  }
+                }
+              ],
+              "next_algoritmo": null
+            }
+          },
+          {
+            "condizione": "PD-L1 inferiore al 50% o non determinabile, istologia squamosa",
+            "nodo": {
+              "id": "pdl1_basso_squamosa",
+              "label": "PD-L1 inferiore al 50% o non determinabile, istologia squamosa",
+              "tipo": "stadiazione",
+              "ambiguita": false,
+              "figli": [
+                {
+                  "condizione": "I linea, 4 cicli",
+                  "nodo": {
+                    "id": "trattamento_5a",
+                    "label": "Carboplatino con nab-paclitaxel e pembrolizumab",
+                    "tipo": "procedura_diagnostica",
+                    "ambiguita": false,
+                    "figli": [
+                      {
+                        "condizione": "Risposta o stabilità",
+                        "nodo": {
+                          "id": "mantenimento_5a",
+                          "label": "Mantenimento: pembrolizumab",
+                          "tipo": "procedura_diagnostica",
+                          "ambiguita": false,
+                          "figli": [],
+                          "next_algoritmo": null
+                        }
+                      },
+                      {
+                        "condizione": "Progressione",
+                        "nodo": {
+                          "id": "progressione_5a",
+                          "label": "Docetaxel con nivolumab, pembrolizumab o atezolizumab",
+                          "tipo": "procedura_diagnostica",
+                          "ambiguita": false,
+                          "figli": [],
+                          "next_algoritmo": null
+                        }
+                      }
+                    ],
+                    "next_algoritmo": null
+                  }
+                }
+              ],
+              "next_algoritmo": null
+            }
+          }
+        ],
+        "next_algoritmo": null
+      }
+    },
+    "algoritmo_7": {
+      "algoritmo_id": "algoritmo_7",
+      "label": "Algoritmo 2",
+      "fonte": "AIOM 2024",
+      "nodo_radice": {
+        "id": "root",
+        "label": "Presentazione clinica",
+        "tipo": "presentazione",
+        "ambiguita": false,
+        "figli": [
+          {
+            "condizione": null,
+            "nodo": {
+              "id": "malattia_estesa",
+              "label": "Malattia estesa",
+              "tipo": "stadiazione",
+              "ambiguita": false,
+              "figli": [
+                {
+                  "condizione": null,
+                  "nodo": {
+                    "id": "chemo_platino_etoposide_immunio",
+                    "label": "Chemioterapia a base di platino con etoposide e atezolizumab o durvalumab",
+                    "tipo": "procedura_diagnostica",
+                    "ambiguita": false,
+                    "figli": [
+                      {
+                        "condizione": "Risposta o stabilita",
+                        "nodo": {
+                          "id": "mantenimento_atezolizumab_durvalumab",
+                          "label": "Mantenimento con atezolizumab o durvalumab, con o senza PCI",
+                          "tipo": "procedura_diagnostica",
+                          "ambiguita": false,
+                          "figli": [],
+                          "next_algoritmo": null
+                        }
+                      },
+                      {
+                        "condizione": "Progressione",
+                        "nodo": {
+                          "id": "terapia_II_linea_estesa",
+                          "label": "Terapia di II linea",
+                          "tipo": "procedura_diagnostica",
+                          "ambiguita": false,
+                          "figli": [],
+                          "next_algoritmo": null
+                        }
+                      }
+                    ],
+                    "next_algoritmo": null
+                  }
+                }
+              ],
+              "next_algoritmo": null
+            }
+          },
+          {
+            "condizione": null,
+            "nodo": {
+              "id": "malattia_limitata",
+              "label": "Malattia limitata",
+              "tipo": "stadiazione",
+              "ambiguita": false,
+              "figli": [
+                {
+                  "condizione": null,
+                  "nodo": {
+                    "id": "chemo_radioterapia",
+                    "label": "Chemioterapia con radioterapia",
+                    "tipo": "procedura_diagnostica",
+                    "ambiguita": false,
+                    "figli": [
+                      {
+                        "condizione": "Risposta o stabilita",
+                        "nodo": {
+                          "id": "followup_pci",
+                          "label": "Follow-up, con o senza PCI",
+                          "tipo": "procedura_diagnostica",
+                          "ambiguita": false,
+                          "figli": [],
+                          "next_algoritmo": null
+                        }
+                      },
+                      {
+                        "condizione": "Progressione",
+                        "nodo": {
+                          "id": "terapia_II_linea_limitata",
+                          "label": "Terapia di II linea",
+                          "tipo": "procedura_diagnostica",
+                          "ambiguita": false,
+                          "figli": [],
+                          "next_algoritmo": null
+                        }
+                      }
+                    ],
+                    "next_algoritmo": null
+                  }
+                }
+              ],
+              "next_algoritmo": null
+            }
+          },
+          {
+            "condizione": null,
+            "nodo": {
+              "id": "progressione_I_linea",
+              "label": "Progressione durante o dopo la I linea",
+              "tipo": "stadiazione",
+              "ambiguita": false,
+              "figli": [
+                {
+                  "condizione": null,
+                  "nodo": {
+                    "id": "valutazione_intervallo",
+                    "label": "Valutazione intervallo dalla fine della chemioterapia precedente",
+                    "tipo": "procedura_diagnostica",
+                    "ambiguita": false,
+                    "figli": [
+                      {
+                        "condizione": "Intervallo inferiore a 3 mesi",
+                        "nodo": {
+                          "id": "topotecan_altro_agente",
+                          "label": "Topotecan, altro agente attivo o studio clinico",
+                          "tipo": "procedura_diagnostica",
+                          "ambiguita": false,
+                          "figli": [],
+                          "next_algoritmo": null
+                        }
+                      },
+                      {
+                        "condizione": "Intervallo superiore a 3 mesi",
+                        "nodo": {
+                          "id": "rechallenge_platino",
+                          "label": "Re-challenge con chemioterapia a base di platino",
+                          "tipo": "procedura_diagnostica",
+                          "ambiguita": false,
+                          "figli": [],
+                          "next_algoritmo": null
+                        }
+                      }
+                    ],
+                    "next_algoritmo": null
+                  }
+                }
+              ],
+              "next_algoritmo": null
+            }
+          }
+        ],
+        "next_algoritmo": null
+      }
+    }
+  }
+}

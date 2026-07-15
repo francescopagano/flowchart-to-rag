@@ -1,0 +1,159 @@
+{
+  "algoritmo_id": "algoritmo_2",
+  "label": "PROFILAZIONE MOLECOLARE",
+  "fonte": "AIOM 2024",
+  "nodo_radice": {
+    "id": "root",
+    "label": "Istotipo",
+    "tipo": "procedura_diagnostica",
+    "ambiguita": false,
+    "figli": [
+      {
+        "condizione": "NSCLC (malattia metastatica) - Non-squamoso",
+        "nodo": {
+          "id": "biomarcatori_non_squamoso_metastatico",
+          "label": "Biomarcatori: EGFR, ALK, ROS1, BRAF, NTRK, RET, METex14, KRASp.G12C; PD-L1",
+          "tipo": "procedura_diagnostica",
+          "componenti": [
+            "EGFR",
+            "ALK",
+            "ROS1",
+            "BRAF",
+            "NTRK",
+            "RET",
+            "METex14",
+            "KRASp.G12C",
+            "PD-L1"
+          ],
+          "ambiguita": false,
+          "figli": [
+            {
+              "condizione": null,
+              "nodo": {
+                "id": "metodica_non_squamoso_metastatico_tessuto",
+                "label": "NGS + IHC (PD-L1) su tessuto tumorale",
+                "tipo": "procedura_diagnostica",
+                "ambiguita": false,
+                "figli": []
+              }
+            },
+            {
+              "condizione": null,
+              "nodo": {
+                "id": "metodica_non_squamoso_metastatico_ctdna",
+                "label": "*NGS su DNA tumorale circolante",
+                "tipo": "procedura_diagnostica",
+                "ambiguita": false,
+                "figli": []
+              }
+            }
+          ]
+        }
+      },
+      {
+        "condizione": "NSCLC (malattia metastatica) - Squamoso, Età <50 anni, Non/lieve fumatore",
+        "nodo": {
+          "id": "biomarcatori_squamoso_metastatico_giovane",
+          "label": "Biomarcatori: EGFR, ALK, ROS1, BRAF, NTRK, RET, METex14, KRASp.G12C; PD-L1",
+          "tipo": "procedura_diagnostica",
+          "componenti": [
+            "EGFR",
+            "ALK",
+            "ROS1",
+            "BRAF",
+            "NTRK",
+            "RET",
+            "METex14",
+            "KRASp.G12C",
+            "PD-L1"
+          ],
+          "ambiguita": false,
+          "figli": [
+            {
+              "condizione": null,
+              "nodo": {
+                "id": "metodica_squamoso_metastatico_giovane_tessuto",
+                "label": "NGS + IHC (PD-L1) su tessuto tumorale",
+                "tipo": "procedura_diagnostica",
+                "ambiguita": false,
+                "figli": []
+              }
+            },
+            {
+              "condizione": null,
+              "nodo": {
+                "id": "metodica_squamoso_metastatico_giovane_ctdna",
+                "label": "*NGS su DNA tumorale circolante",
+                "tipo": "procedura_diagnostica",
+                "ambiguita": false,
+                "figli": []
+              }
+            }
+          ]
+        }
+      },
+      {
+        "condizione": "NSCLC (malattia metastatica) - Squamoso, Età >50 anni, Fumatore",
+        "nodo": {
+          "id": "biomarcatori_squamoso_metastatico_anziano",
+          "label": "PD-L1; Valutare alcuni biomarcatori (ad es. KRASp.G12C)",
+          "tipo": "procedura_diagnostica",
+          "componenti": [
+            "PD-L1",
+            "Valutare alcuni biomarcatori (ad es. KRASp.G12C)"
+          ],
+          "ambiguita": false,
+          "figli": [
+            {
+              "condizione": null,
+              "nodo": {
+                "id": "metodica_squamoso_metastatico_anziano_tessuto",
+                "label": "NGS/altra metodica + IHC (PD-L1) su tessuto tumorale",
+                "tipo": "procedura_diagnostica",
+                "ambiguita": false,
+                "figli": []
+              }
+            },
+            {
+              "condizione": null,
+              "nodo": {
+                "id": "metodica_squamoso_metastatico_anziano_ctdna",
+                "label": "*NGS su DNA tumorale circolante",
+                "tipo": "procedura_diagnostica",
+                "ambiguita": false,
+                "figli": []
+              }
+            }
+          ]
+        }
+      },
+      {
+        "condizione": "NSCLC (malattia NON metastatica) - Squamoso e non-squamoso",
+        "nodo": {
+          "id": "biomarcatori_non_metastatico",
+          "label": "Biomarcatori: EGFR, ALK, PD-L1",
+          "tipo": "procedura_diagnostica",
+          "componenti": [
+            "EGFR",
+            "ALK",
+            "PD-L1"
+          ],
+          "ambiguita": false,
+          "figli": [
+            {
+              "condizione": null,
+              "nodo": {
+                "id": "metodica_non_metastatico",
+                "label": "Metodica single gene/ NGS + IHC (PD-L1) su tessuto tumorale",
+                "tipo": "procedura_diagnostica",
+                "ambiguita": false,
+                "figli": []
+              }
+            }
+          ]
+        }
+      }
+    ],
+    "next_algoritmo": null
+  }
+}

@@ -1,0 +1,233 @@
+{
+  "algoritmo_id": "algoritmo_6",
+  "label": "Algoritmo 2",
+  "fonte": "AIOM 2024",
+  "nodo_radice": {
+    "id": "root",
+    "label": "Selezione per PD-L1 e istologia",
+    "tipo": "presentazione",
+    "ambiguita": false,
+    "figli": [
+      {
+        "condizione": "PD-L1 uguale o superiore al 50%",
+        "nodo": {
+          "id": "pdl1_alto",
+          "label": "PD-L1 uguale o superiore al 50%",
+          "tipo": "stadiazione",
+          "ambiguita": false,
+          "figli": [
+            {
+              "condizione": "I linea",
+              "nodo": {
+                "id": "trattamento_1a",
+                "label": "Pembrolizumab, cemiplimab, atezolizumab",
+                "tipo": "procedura_diagnostica",
+                "ambiguita": false,
+                "figli": [
+                  {
+                    "condizione": "Progressione",
+                    "nodo": {
+                      "id": "progressione_1a",
+                      "label": "Chemioterapia a base di platino",
+                      "tipo": "procedura_diagnostica",
+                      "ambiguita": false,
+                      "figli": [],
+                      "next_algoritmo": null
+                    }
+                  }
+                ],
+                "next_algoritmo": null
+              }
+            }
+          ],
+          "next_algoritmo": null
+        }
+      },
+      {
+        "condizione": "PD-L1 inferiore al 50% o non determinabile, istologia non-squamosa",
+        "nodo": {
+          "id": "pdl1_basso_nonsquamosa",
+          "label": "PD-L1 inferiore al 50% o non determinabile, istologia non-squamosa",
+          "tipo": "stadiazione",
+          "ambiguita": false,
+          "figli": [
+            {
+              "condizione": "I linea, 4 cicli",
+              "nodo": {
+                "id": "trattamento_2a",
+                "label": "Chemioterapia a base di platino con pemetrexed e pembrolizumab",
+                "tipo": "procedura_diagnostica",
+                "ambiguita": false,
+                "figli": [
+                  {
+                    "condizione": "Risposta o stabilità",
+                    "nodo": {
+                      "id": "mantenimento_2a",
+                      "label": "Mantenimento: pemetrexed con pembrolizumab",
+                      "tipo": "procedura_diagnostica",
+                      "ambiguita": false,
+                      "figli": [],
+                      "next_algoritmo": null
+                    }
+                  },
+                  {
+                    "condizione": "Progressione",
+                    "nodo": {
+                      "id": "progressione_2a",
+                      "label": "Docetaxel con nintedanib, oppure nivolumab, pembrolizumab o atezolizumab",
+                      "tipo": "procedura_diagnostica",
+                      "ambiguita": false,
+                      "figli": [],
+                      "next_algoritmo": null
+                    }
+                  }
+                ],
+                "next_algoritmo": null
+              }
+            }
+          ],
+          "next_algoritmo": null
+        }
+      },
+      {
+        "condizione": "PD-L1 inferiore al 50% o non determinabile, squamosa e non-squamosa",
+        "nodo": {
+          "id": "pdl1_basso_sq_nonsq",
+          "label": "PD-L1 inferiore al 50% o non determinabile, squamosa e non-squamosa",
+          "tipo": "stadiazione",
+          "ambiguita": false,
+          "figli": [
+            {
+              "condizione": "I linea, 2 cicli",
+              "nodo": {
+                "id": "trattamento_3a",
+                "label": "Nivolumab con ipilimumab e chemioterapia a base di platino",
+                "tipo": "procedura_diagnostica",
+                "ambiguita": false,
+                "figli": [
+                  {
+                    "condizione": "Risposta o stabilità",
+                    "nodo": {
+                      "id": "mantenimento_3a",
+                      "label": "Mantenimento: nivolumab con ipilimumab",
+                      "tipo": "procedura_diagnostica",
+                      "ambiguita": false,
+                      "figli": [],
+                      "next_algoritmo": null
+                    }
+                  },
+                  {
+                    "condizione": "Progressione",
+                    "nodo": {
+                      "id": "progressione_3a",
+                      "label": "Docetaxel con nivolumab, pembrolizumab o atezolizumab",
+                      "tipo": "procedura_diagnostica",
+                      "ambiguita": false,
+                      "figli": [],
+                      "next_algoritmo": null
+                    }
+                  }
+                ],
+                "next_algoritmo": null
+              }
+            }
+          ],
+          "next_algoritmo": null
+        }
+      },
+      {
+        "condizione": "PD-L1 dall'1% al 49%, squamosa e non-squamosa",
+        "nodo": {
+          "id": "pdl1_1_49_sq_nonsq",
+          "label": "PD-L1 dall'1% al 49%, squamosa e non-squamosa",
+          "tipo": "stadiazione",
+          "ambiguita": false,
+          "figli": [
+            {
+              "condizione": "I linea, 4 cicli",
+              "nodo": {
+                "id": "trattamento_4a",
+                "label": "Cemiplimab con chemioterapia a base di platino",
+                "tipo": "procedura_diagnostica",
+                "ambiguita": false,
+                "figli": [
+                  {
+                    "condizione": "Risposta o stabilità",
+                    "nodo": {
+                      "id": "mantenimento_4a",
+                      "label": "Mantenimento: cemiplimab, con o senza pemetrexed se non-squamosa",
+                      "tipo": "procedura_diagnostica",
+                      "ambiguita": false,
+                      "figli": [],
+                      "next_algoritmo": null
+                    }
+                  },
+                  {
+                    "condizione": "Progressione",
+                    "nodo": {
+                      "id": "progressione_4a",
+                      "label": "Docetaxel con nivolumab, pembrolizumab o atezolizumab",
+                      "tipo": "procedura_diagnostica",
+                      "ambiguita": false,
+                      "figli": [],
+                      "next_algoritmo": null
+                    }
+                  }
+                ],
+                "next_algoritmo": null
+              }
+            }
+          ],
+          "next_algoritmo": null
+        }
+      },
+      {
+        "condizione": "PD-L1 inferiore al 50% o non determinabile, istologia squamosa",
+        "nodo": {
+          "id": "pdl1_basso_squamosa",
+          "label": "PD-L1 inferiore al 50% o non determinabile, istologia squamosa",
+          "tipo": "stadiazione",
+          "ambiguita": false,
+          "figli": [
+            {
+              "condizione": "I linea, 4 cicli",
+              "nodo": {
+                "id": "trattamento_5a",
+                "label": "Carboplatino con nab-paclitaxel e pembrolizumab",
+                "tipo": "procedura_diagnostica",
+                "ambiguita": false,
+                "figli": [
+                  {
+                    "condizione": "Risposta o stabilità",
+                    "nodo": {
+                      "id": "mantenimento_5a",
+                      "label": "Mantenimento: pembrolizumab",
+                      "tipo": "procedura_diagnostica",
+                      "ambiguita": false,
+                      "figli": [],
+                      "next_algoritmo": null
+                    }
+                  },
+                  {
+                    "condizione": "Progressione",
+                    "nodo": {
+                      "id": "progressione_5a",
+                      "label": "Docetaxel con nivolumab, pembrolizumab o atezolizumab",
+                      "tipo": "procedura_diagnostica",
+                      "ambiguita": false,
+                      "figli": [],
+                      "next_algoritmo": null
+                    }
+                  }
+                ],
+                "next_algoritmo": null
+              }
+            }
+          ],
+          "next_algoritmo": null
+        }
+      }
+    ],
+    "next_algoritmo": null
+  }
+}

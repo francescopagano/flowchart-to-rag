@@ -1,0 +1,228 @@
+{
+  "algoritmo_id": "algoritmo_5",
+  "label": "NSCLC IN STADIO AVANZATO (MALATTIA ONCOGENE-ADDICTED)",
+  "fonte": "AIOM 2024",
+  "nodo_radice": {
+    "id": "root",
+    "label": "NSCLC in stadio avanzato - Malattia oncogene-addicted",
+    "tipo": "presentazione",
+    "ambiguita": false,
+    "figli": [
+      {
+        "condizione": "Mutazioni classiche di EGFR",
+        "nodo": {
+          "id": "egfr_classiche_trattamento",
+          "label": "Osimertinib",
+          "tipo": "procedura_diagnostica",
+          "ambiguita": false,
+          "figli": [
+            {
+              "condizione": "Progressione",
+              "nodo": {
+                "id": "egfr_classiche_progressione",
+                "label": "Chemioterapia a base di platino",
+                "tipo": "procedura_diagnostica",
+                "ambiguita": false,
+                "figli": []
+              }
+            }
+          ]
+        }
+      },
+      {
+        "condizione": "Mutazioni non comuni di EGFR (esoni 18-21) (eccetto inserzione esone 20)",
+        "nodo": {
+          "id": "egfr_non_comuni_trattamento",
+          "label": "Afatinib, osimertinib",
+          "tipo": "procedura_diagnostica",
+          "ambiguita": false,
+          "figli": [
+            {
+              "condizione": "Progressione",
+              "nodo": {
+                "id": "egfr_non_comuni_progressione",
+                "label": "Chemioterapia a base di platino",
+                "tipo": "procedura_diagnostica",
+                "ambiguita": false,
+                "figli": []
+              }
+            }
+          ]
+        }
+      },
+      {
+        "condizione": "Inserzioni esone 20 di EGFR",
+        "nodo": {
+          "id": "egfr_esone20_trattamento",
+          "label": "Chemioterapia a base di platino",
+          "tipo": "procedura_diagnostica",
+          "ambiguita": false,
+          "figli": [
+            {
+              "condizione": "Progressione",
+              "nodo": {
+                "id": "egfr_esone20_progressione",
+                "label": "Amivantamab",
+                "tipo": "procedura_diagnostica",
+                "ambiguita": false,
+                "figli": []
+              }
+            }
+          ]
+        }
+      },
+      {
+        "condizione": "Riarrangiamenti di ALK",
+        "nodo": {
+          "id": "alk_trattamento",
+          "label": "Alectinib, brigatinib, lorlatinib",
+          "tipo": "procedura_diagnostica",
+          "ambiguita": false,
+          "figli": [
+            {
+              "condizione": "Progressione",
+              "nodo": {
+                "id": "alk_progressione",
+                "label": "Lorlatinib¹ (chemioterapia a base di platino²)",
+                "tipo": "procedura_diagnostica",
+                "ambiguita": false,
+                "componenti": [
+                  "Lorlatinib¹ - In pazienti in progressione a alectinib o ceritinib oppure crizotinib e almeno un altro TKI.",
+                  "Chemioterapia a base di platino² - In pazienti in progressione a brigatinib o lorlatinib."
+                ],
+                "figli": []
+              }
+            }
+          ]
+        }
+      },
+      {
+        "condizione": "Riarrangiamenti di ROS 1",
+        "nodo": {
+          "id": "ros1_trattamento",
+          "label": "Entrectinib, crizotinib",
+          "tipo": "procedura_diagnostica",
+          "ambiguita": false,
+          "figli": [
+            {
+              "condizione": "Progressione",
+              "nodo": {
+                "id": "ros1_progressione",
+                "label": "Chemioterapia a base di platino",
+                "tipo": "procedura_diagnostica",
+                "ambiguita": false,
+                "figli": []
+              }
+            }
+          ]
+        }
+      },
+      {
+        "condizione": "Mutazioni di BRAF-V600",
+        "nodo": {
+          "id": "braf_trattamento",
+          "label": "Dabrafenib + trametinib",
+          "tipo": "procedura_diagnostica",
+          "ambiguita": false,
+          "figli": [
+            {
+              "condizione": "Progressione",
+              "nodo": {
+                "id": "braf_progressione",
+                "label": "Immunoterapia e/o chemioterapia a base di platino",
+                "tipo": "procedura_diagnostica",
+                "ambiguita": false,
+                "figli": []
+              }
+            }
+          ]
+        }
+      },
+      {
+        "condizione": "Riarrangiamenti di NTRK",
+        "nodo": {
+          "id": "ntrk_trattamento",
+          "label": "Entrectinib, larotrectinib",
+          "tipo": "procedura_diagnostica",
+          "ambiguita": false,
+          "figli": [
+            {
+              "condizione": "Progressione",
+              "nodo": {
+                "id": "ntrk_progressione",
+                "label": "Chemioterapia a base di platino",
+                "tipo": "procedura_diagnostica",
+                "ambiguita": false,
+                "figli": []
+              }
+            }
+          ]
+        }
+      },
+      {
+        "condizione": "Riarrangiamenti di RET",
+        "nodo": {
+          "id": "ret_trattamento",
+          "label": "Chemioterapia a base di platino",
+          "tipo": "procedura_diagnostica",
+          "ambiguita": false,
+          "figli": [
+            {
+              "condizione": "Progressione",
+              "nodo": {
+                "id": "ret_progressione",
+                "label": "Selpercatinib",
+                "tipo": "procedura_diagnostica",
+                "ambiguita": false,
+                "figli": []
+              }
+            }
+          ]
+        }
+      },
+      {
+        "condizione": "Skipping esone 14 MET",
+        "nodo": {
+          "id": "met_trattamento",
+          "label": "Immunoterapia e/o chemioterapia a base di platino",
+          "tipo": "procedura_diagnostica",
+          "ambiguita": false,
+          "figli": [
+            {
+              "condizione": "Progressione",
+              "nodo": {
+                "id": "met_progressione",
+                "label": "Capmatinib, tepotinib",
+                "tipo": "procedura_diagnostica",
+                "ambiguita": false,
+                "figli": []
+              }
+            }
+          ]
+        }
+      },
+      {
+        "condizione": "Mutazione KRASp.G12C",
+        "nodo": {
+          "id": "kras_trattamento",
+          "label": "Immunoterapia e/o chemioterapia a base di platino",
+          "tipo": "procedura_diagnostica",
+          "ambiguita": false,
+          "figli": [
+            {
+              "condizione": "Progressione",
+              "nodo": {
+                "id": "kras_progressione",
+                "label": "Sotorasib",
+                "tipo": "procedura_diagnostica",
+                "ambiguita": false,
+                "figli": []
+              }
+            }
+          ]
+        }
+      }
+    ],
+    "next_algoritmo": null
+  }
+}

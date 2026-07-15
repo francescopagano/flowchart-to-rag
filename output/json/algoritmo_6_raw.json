@@ -1,0 +1,183 @@
+{
+  "algoritmo_id": "algoritmo_6",
+  "label": "NSCLC IN STADIO AVANZATO (MALATTIA NON ONCOGENE-ADDICTED)",
+  "fonte": "AIOM 2024",
+  "nodo_radice": {
+    "id": "root",
+    "label": "NSCLC in stadio avanzato (malattia non oncogene-addicted)",
+    "tipo": "presentazione",
+    "ambiguita": false,
+    "figli": [
+      {
+        "condizione": "PD-L1 ≥50%",
+        "nodo": {
+          "id": "trattamento_pdl1_alto",
+          "label": "Pembrolizumab, cemiplimab, atezolizumab",
+          "tipo": "procedura_diagnostica",
+          "ambiguita": false,
+          "figli": [
+            {
+              "condizione": "Progressione",
+              "nodo": {
+                "id": "progressione_pdl1_alto",
+                "label": "Chemioterapia a base di platino",
+                "tipo": "procedura_diagnostica",
+                "ambiguita": false,
+                "figli": []
+              }
+            }
+          ]
+        }
+      },
+      {
+        "condizione": "PD-L1 <50% o ND1 - Istologia non-squamosa",
+        "nodo": {
+          "id": "trattamento_pdl1_basso_nonsquamosa",
+          "label": "Chemioterapia a base di platino + pemetrexed + pembrolizumab x 4 cicli",
+          "tipo": "procedura_diagnostica",
+          "ambiguita": false,
+          "figli": [
+            {
+              "condizione": "Risposta obiettiva o stabilità di malattia",
+              "nodo": {
+                "id": "mantenimento_pdl1_basso_nonsquamosa",
+                "label": "Mantenimento con pemetrexed + pembrolizumab",
+                "tipo": "procedura_diagnostica",
+                "ambiguita": false,
+                "figli": []
+              }
+            },
+            {
+              "condizione": "Progressione",
+              "nodo": {
+                "id": "progressione_pdl1_basso_nonsquamosa",
+                "label": "Docetaxel + nintedanib; Nivolumab2, pembrolizumab2, atezolizumab2",
+                "tipo": "procedura_diagnostica",
+                "ambiguita": false,
+                "componenti": [
+                  "Docetaxel + nintedanib",
+                  "Nivolumab2",
+                  "pembrolizumab2",
+                  "atezolizumab2"
+                ],
+                "figli": []
+              }
+            }
+          ]
+        }
+      },
+      {
+        "condizione": "PD-L1 <50% o ND1 - Istologia squamosa",
+        "nodo": {
+          "id": "trattamento_pdl1_basso_squamosa",
+          "label": "Chemioterapia a base di carboplatino + (nab)paclitaxel + pembrolizumab x 4 cicli",
+          "tipo": "procedura_diagnostica",
+          "ambiguita": false,
+          "figli": [
+            {
+              "condizione": "Risposta obiettiva o stabilità di malattia",
+              "nodo": {
+                "id": "mantenimento_pdl1_basso_squamosa",
+                "label": "Mantenimento con pembrolizumab",
+                "tipo": "procedura_diagnostica",
+                "ambiguita": false,
+                "figli": []
+              }
+            },
+            {
+              "condizione": "Progressione",
+              "nodo": {
+                "id": "progressione_pdl1_basso_squamosa",
+                "label": "Docetaxel; Nivolumab2, pembrolizumab2, atezolizumab2",
+                "tipo": "procedura_diagnostica",
+                "ambiguita": false,
+                "componenti": [
+                  "Docetaxel",
+                  "Nivolumab2",
+                  "pembrolizumab2",
+                  "atezolizumab2"
+                ],
+                "figli": []
+              }
+            }
+          ]
+        }
+      },
+      {
+        "condizione": "PD-L1 <50% o ND1 - Istologia squamosa e non-squamosa",
+        "nodo": {
+          "id": "trattamento_pdl1_basso_nivo_ipi",
+          "label": "Nivolumab + ipilimumab + chemioterapia a base di platino x 2 cicli",
+          "tipo": "procedura_diagnostica",
+          "ambiguita": false,
+          "figli": [
+            {
+              "condizione": "Risposta obiettiva o stabilità di malattia",
+              "nodo": {
+                "id": "mantenimento_nivo_ipi",
+                "label": "Mantenimento con nivolumab + ipilimumab",
+                "tipo": "procedura_diagnostica",
+                "ambiguita": false,
+                "figli": []
+              }
+            },
+            {
+              "condizione": "Progressione",
+              "nodo": {
+                "id": "progressione_nivo_ipi",
+                "label": "Docetaxel; Nivolumab2, pembrolizumab2, atezolizumab2",
+                "tipo": "procedura_diagnostica",
+                "ambiguita": false,
+                "componenti": [
+                  "Docetaxel",
+                  "Nivolumab2",
+                  "pembrolizumab2",
+                  "atezolizumab2"
+                ],
+                "figli": []
+              }
+            }
+          ]
+        }
+      },
+      {
+        "condizione": "PD-L1 1-49% - Istologia squamosa e non-squamosa",
+        "nodo": {
+          "id": "trattamento_pdl1_149_cemiplimab",
+          "label": "Cemiplimab + chemioterapia a base di platino x 4 cicli",
+          "tipo": "procedura_diagnostica",
+          "ambiguita": false,
+          "figli": [
+            {
+              "condizione": "Risposta obiettiva o stabilità di malattia",
+              "nodo": {
+                "id": "mantenimento_cemiplimab",
+                "label": "Mantenimento con cemiplimab ± pemetrexed (istologia non-squamosa)",
+                "tipo": "procedura_diagnostica",
+                "ambiguita": false,
+                "figli": []
+              }
+            },
+            {
+              "condizione": "Progressione",
+              "nodo": {
+                "id": "progressione_cemiplimab",
+                "label": "Docetaxel; Nivolumab2, pembrolizumab2, atezolizumab2",
+                "tipo": "procedura_diagnostica",
+                "ambiguita": false,
+                "componenti": [
+                  "Docetaxel",
+                  "Nivolumab2",
+                  "pembrolizumab2",
+                  "atezolizumab2"
+                ],
+                "figli": []
+              }
+            }
+          ]
+        }
+      }
+    ],
+    "next_algoritmo": null
+  }
+}

@@ -1,0 +1,213 @@
+{
+  "algoritmo_id": "algoritmo_3",
+  "label": "Malattia localizzata - Gestione terapeutica",
+  "fonte": "AIOM 2024",
+  "nodo_radice": {
+    "id": "n1",
+    "label": "Malattia localizzata",
+    "tipo": "presentazione",
+    "ambiguita": false,
+    "figli": [
+      {
+        "condizione": null,
+        "nodo": {
+          "id": "n2",
+          "label": "Operabilita biologica, anatomica, funzionale",
+          "tipo": "procedura_diagnostica",
+          "ambiguita": false,
+          "figli": [
+            {
+              "condizione": "Si",
+              "nodo": {
+                "id": "n3",
+                "label": "Chirurgia",
+                "tipo": "procedura_diagnostica",
+                "ambiguita": false,
+                "figli": [
+                  {
+                    "condizione": null,
+                    "nodo": {
+                      "id": "n5",
+                      "label": "Stadio II-III",
+                      "tipo": "stadiazione",
+                      "ambiguita": false,
+                      "figli": [
+                        {
+                          "condizione": null,
+                          "nodo": {
+                            "id": "n7",
+                            "label": "Indicazione a chemioterapia adiuvante?",
+                            "tipo": "procedura_diagnostica",
+                            "ambiguita": false,
+                            "figli": [
+                              {
+                                "condizione": "Si",
+                                "nodo": {
+                                  "id": "n8",
+                                  "label": "EGFR mutato, Del19 o L858R",
+                                  "tipo": "diagnosi",
+                                  "ambiguita": false,
+                                  "figli": [
+                                    {
+                                      "condizione": null,
+                                      "nodo": {
+                                        "id": "n11",
+                                        "label": "Chemioterapia a base di platino",
+                                        "tipo": "procedura_diagnostica",
+                                        "ambiguita": false,
+                                        "figli": [
+                                          {
+                                            "condizione": null,
+                                            "nodo": {
+                                              "id": "n14",
+                                              "label": "Osimertinib per 3 anni",
+                                              "tipo": "procedura_diagnostica",
+                                              "ambiguita": false,
+                                              "figli": [],
+                                              "next_algoritmo": null
+                                            }
+                                          }
+                                        ],
+                                        "next_algoritmo": null
+                                      }
+                                    }
+                                  ],
+                                  "next_algoritmo": null
+                                }
+                              },
+                              {
+                                "condizione": "Si",
+                                "nodo": {
+                                  "id": "n9",
+                                  "label": "EGFR/ALK wild-type, PD-L1 uguale o superiore al 50%",
+                                  "tipo": "diagnosi",
+                                  "ambiguita": false,
+                                  "figli": [
+                                    {
+                                      "condizione": null,
+                                      "nodo": {
+                                        "id": "n12",
+                                        "label": "Chemioterapia a base di platino",
+                                        "tipo": "procedura_diagnostica",
+                                        "ambiguita": false,
+                                        "figli": [
+                                          {
+                                            "condizione": null,
+                                            "nodo": {
+                                              "id": "n15",
+                                              "label": "Atezolizumab per 1 anno",
+                                              "tipo": "procedura_diagnostica",
+                                              "ambiguita": false,
+                                              "figli": [],
+                                              "next_algoritmo": null
+                                            }
+                                          }
+                                        ],
+                                        "next_algoritmo": null
+                                      }
+                                    }
+                                  ],
+                                  "next_algoritmo": null
+                                }
+                              },
+                              {
+                                "condizione": "Si",
+                                "nodo": {
+                                  "id": "n10",
+                                  "label": "EGFR/ALK wild-type, PD-L1 inferiore al 50%",
+                                  "tipo": "diagnosi",
+                                  "ambiguita": false,
+                                  "figli": [
+                                    {
+                                      "condizione": null,
+                                      "nodo": {
+                                        "id": "n13",
+                                        "label": "Chemioterapia a base di platino",
+                                        "tipo": "procedura_diagnostica",
+                                        "ambiguita": false,
+                                        "figli": [
+                                          {
+                                            "condizione": null,
+                                            "nodo": {
+                                              "id": "n16",
+                                              "label": "Follow-up",
+                                              "tipo": "esito_negativo",
+                                              "ambiguita": false,
+                                              "figli": [],
+                                              "next_algoritmo": null
+                                            }
+                                          }
+                                        ],
+                                        "next_algoritmo": null
+                                      }
+                                    }
+                                  ],
+                                  "next_algoritmo": null
+                                }
+                              },
+                              {
+                                "condizione": "No",
+                                "nodo": {
+                                  "id": "n16b",
+                                  "label": "Follow-up",
+                                  "tipo": "esito_negativo",
+                                  "ambiguita": false,
+                                  "figli": [],
+                                  "next_algoritmo": null
+                                }
+                              }
+                            ],
+                            "next_algoritmo": null
+                          }
+                        }
+                      ],
+                      "next_algoritmo": null
+                    }
+                  }
+                ],
+                "next_algoritmo": null
+              }
+            },
+            {
+              "condizione": "No",
+              "nodo": {
+                "id": "n4",
+                "label": "Radioterapia SBRT",
+                "tipo": "procedura_diagnostica",
+                "ambiguita": false,
+                "figli": [
+                  {
+                    "condizione": null,
+                    "nodo": {
+                      "id": "n6",
+                      "label": "Stadio I",
+                      "tipo": "stadiazione",
+                      "ambiguita": false,
+                      "figli": [
+                        {
+                          "condizione": null,
+                          "nodo": {
+                            "id": "n16c",
+                            "label": "Follow-up",
+                            "tipo": "esito_negativo",
+                            "ambiguita": false,
+                            "figli": [],
+                            "next_algoritmo": null
+                          }
+                        }
+                      ],
+                      "next_algoritmo": null
+                    }
+                  }
+                ],
+                "next_algoritmo": null
+              }
+            }
+          ],
+          "next_algoritmo": null
+        }
+      }
+    ],
+    "next_algoritmo": null
+  }
+}

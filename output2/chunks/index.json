@@ -1,0 +1,357 @@
+{
+  "total_chunks": 44,
+  "chunks": [
+    {
+      "chunk_id": "algoritmo_1_esami_diagnostici_esame_obiettivo_rx_torace_tc_torace_fibrob",
+      "file": "algoritmo_1_esami_diagnostici_esame_obiettivo_rx_torace_tc_torace_fibrob_0.md",
+      "algoritmo": "Algoritmo 1 - Diagnosi e Stadiazione",
+      "percorso": "Esami diagnostici: esame obiettivo, Rx torace, TC torace, fibrobroncoscopia, esame citologico escreato (facoltativo), agoaspirato transtoracico (facoltativo) > No neoplasia primitiva polmonare",
+      "token_estimate": 208,
+      "cross_ref": null
+    },
+    {
+      "chunk_id": "algoritmo_1_esami_diagnostici_esame_obiettivo_rx_torace_tc_torace_fibrob",
+      "file": "algoritmo_1_esami_diagnostici_esame_obiettivo_rx_torace_tc_torace_fibrob_1.md",
+      "algoritmo": "Algoritmo 1 - Diagnosi e Stadiazione",
+      "percorso": "Esami diagnostici: esame obiettivo, Rx torace, TC torace, fibrobroncoscopia, esame citologico escreato (facoltativo), agoaspirato transtoracico (facoltativo) > NSCLC > Esami di stadiazione: Valutazione mediastinica; TC collo, torace, addome superiore; TC/RM encefalo > ALGORITMO 2 - Profilazione Molecolare",
+      "token_estimate": 338,
+      "cross_ref": "algoritmo_7"
+    },
+    {
+      "chunk_id": "algoritmo_1_esami_diagnostici_esame_obiettivo_rx_torace_tc_torace_fibrob",
+      "file": "algoritmo_1_esami_diagnostici_esame_obiettivo_rx_torace_tc_torace_fibrob_2.md",
+      "algoritmo": "Algoritmo 1 - Diagnosi e Stadiazione",
+      "percorso": "Esami diagnostici: esame obiettivo, Rx torace, TC torace, fibrobroncoscopia, esame citologico escreato (facoltativo), agoaspirato transtoracico (facoltativo) > NSCLC > Esami di stadiazione: Valutazione mediastinica; TC collo, torace, addome superiore; TC/RM encefalo > ALGORITMO 3 - NSCLC Stadio Precoce",
+      "token_estimate": 296,
+      "cross_ref": null
+    },
+    {
+      "chunk_id": "algoritmo_1_esami_diagnostici_esame_obiettivo_rx_torace_tc_torace_fibrob",
+      "file": "algoritmo_1_esami_diagnostici_esame_obiettivo_rx_torace_tc_torace_fibrob_3.md",
+      "algoritmo": "Algoritmo 1 - Diagnosi e Stadiazione",
+      "percorso": "Esami diagnostici: esame obiettivo, Rx torace, TC torace, fibrobroncoscopia, esame citologico escreato (facoltativo), agoaspirato transtoracico (facoltativo) > NSCLC > Esami di stadiazione: Valutazione mediastinica; TC collo, torace, addome superiore; TC/RM encefalo > ALGORITMO 4 - NSCLC Stadio Localmente Avanzato",
+      "token_estimate": 305,
+      "cross_ref": null
+    },
+    {
+      "chunk_id": "algoritmo_1_esami_diagnostici_esame_obiettivo_rx_torace_tc_torace_fibrob",
+      "file": "algoritmo_1_esami_diagnostici_esame_obiettivo_rx_torace_tc_torace_fibrob_4.md",
+      "algoritmo": "Algoritmo 1 - Diagnosi e Stadiazione",
+      "percorso": "Esami diagnostici: esame obiettivo, Rx torace, TC torace, fibrobroncoscopia, esame citologico escreato (facoltativo), agoaspirato transtoracico (facoltativo) > NSCLC > Esami di stadiazione: Valutazione mediastinica; TC collo, torace, addome superiore; TC/RM encefalo > ALGORITMO 5 - NSCLC Avanzato, Malattia Oncogene-Addicted",
+      "token_estimate": 313,
+      "cross_ref": null
+    },
+    {
+      "chunk_id": "algoritmo_1_esami_diagnostici_esame_obiettivo_rx_torace_tc_torace_fibrob",
+      "file": "algoritmo_1_esami_diagnostici_esame_obiettivo_rx_torace_tc_torace_fibrob_5.md",
+      "algoritmo": "Algoritmo 1 - Diagnosi e Stadiazione",
+      "percorso": "Esami diagnostici: esame obiettivo, Rx torace, TC torace, fibrobroncoscopia, esame citologico escreato (facoltativo), agoaspirato transtoracico (facoltativo) > NSCLC > Esami di stadiazione: Valutazione mediastinica; TC collo, torace, addome superiore; TC/RM encefalo > ALGORITMO 6 - NSCLC Avanzato, Malattia NON Oncogene-Addicted",
+      "token_estimate": 316,
+      "cross_ref": null
+    },
+    {
+      "chunk_id": "algoritmo_1_esami_diagnostici_esame_obiettivo_rx_torace_tc_torace_fibrob",
+      "file": "algoritmo_1_esami_diagnostici_esame_obiettivo_rx_torace_tc_torace_fibrob_6.md",
+      "algoritmo": "Algoritmo 1 - Diagnosi e Stadiazione",
+      "percorso": "Esami diagnostici: esame obiettivo, Rx torace, TC torace, fibrobroncoscopia, esame citologico escreato (facoltativo), agoaspirato transtoracico (facoltativo) > SCLC > Esami di stadiazione: TC collo, torace, addome completo; TC/RM encefalo; PET-TC > ALGORITMO 7 - SCLC Stadio Limitato ed Esteso",
+      "token_estimate": 289,
+      "cross_ref": null
+    },
+    {
+      "chunk_id": "algoritmo_2_punto_di_partenza_tipo_di_malattia_nsclc_nsclc_malattia_meta",
+      "file": "algoritmo_2_punto_di_partenza_tipo_di_malattia_nsclc_nsclc_malattia_meta_0.md",
+      "algoritmo": "NSCLC - Biomarcatori e Metodiche diagnostiche per malattia metastatica e non metastatica",
+      "percorso": "Punto di partenza: tipo di malattia NSCLC > NSCLC, malattia metastatica > Istotipo: Squamoso, eta inferiore a 50 anni, non fumatore o lieve fumatore > Biomarcatori: EGFR, ALK, ROS1, BRAF, NTRK, RET, METex14, KRASp.G12C, PD-L1 > Metodica: NGS + IHC PD-L1 su tessuto tumorale; NGS su DNA tumorale circolante, se tessuto non disponibile",
+      "token_estimate": 369,
+      "cross_ref": null
+    },
+    {
+      "chunk_id": "algoritmo_2_punto_di_partenza_tipo_di_malattia_nsclc_nsclc_malattia_meta",
+      "file": "algoritmo_2_punto_di_partenza_tipo_di_malattia_nsclc_nsclc_malattia_meta_1.md",
+      "algoritmo": "NSCLC - Biomarcatori e Metodiche diagnostiche per malattia metastatica e non metastatica",
+      "percorso": "Punto di partenza: tipo di malattia NSCLC > NSCLC, malattia metastatica > Istotipo: Non-squamoso > Biomarcatori: EGFR, ALK, ROS1, BRAF, NTRK, RET, METex14, KRASp.G12C, PD-L1 > Metodica: NGS + IHC PD-L1 su tessuto tumorale; NGS su DNA tumorale circolante, se tessuto non disponibile",
+      "token_estimate": 317,
+      "cross_ref": null
+    },
+    {
+      "chunk_id": "algoritmo_2_punto_di_partenza_tipo_di_malattia_nsclc_nsclc_malattia_meta",
+      "file": "algoritmo_2_punto_di_partenza_tipo_di_malattia_nsclc_nsclc_malattia_meta_2.md",
+      "algoritmo": "NSCLC - Biomarcatori e Metodiche diagnostiche per malattia metastatica e non metastatica",
+      "percorso": "Punto di partenza: tipo di malattia NSCLC > NSCLC, malattia metastatica > Istotipo: Squamoso, eta superiore a 50 anni, fumatore > Biomarcatori: PD-L1, valutare alcuni biomarcatori (es. KRASp.G12C) > Metodica: NGS o altra metodica + IHC PD-L1 su tessuto tumorale; NGS su DNA tumorale circolante, se tessuto non disponibile",
+      "token_estimate": 355,
+      "cross_ref": null
+    },
+    {
+      "chunk_id": "algoritmo_2_punto_di_partenza_tipo_di_malattia_nsclc_nsclc_malattia_non_",
+      "file": "algoritmo_2_punto_di_partenza_tipo_di_malattia_nsclc_nsclc_malattia_non__3.md",
+      "algoritmo": "NSCLC - Biomarcatori e Metodiche diagnostiche per malattia metastatica e non metastatica",
+      "percorso": "Punto di partenza: tipo di malattia NSCLC > NSCLC, malattia NON metastatica > Istotipo: Squamoso e non-squamoso > Biomarcatori: EGFR, ALK, PD-L1 > Metodica single gene o NGS + IHC PD-L1 su tessuto tumorale",
+      "token_estimate": 254,
+      "cross_ref": null
+    },
+    {
+      "chunk_id": "algoritmo_3_malattia_localizzata_operabilita_biologica_anatomica_funzion",
+      "file": "algoritmo_3_malattia_localizzata_operabilita_biologica_anatomica_funzion_0.md",
+      "algoritmo": "Malattia localizzata - Gestione terapeutica",
+      "percorso": "Malattia localizzata > Operabilita biologica, anatomica, funzionale > Chirurgia > Stadio II-III > Indicazione a chemioterapia adiuvante? > EGFR mutato, Del19 o L858R > Chemioterapia a base di platino > Osimertinib per 3 anni",
+      "token_estimate": 241,
+      "cross_ref": null
+    },
+    {
+      "chunk_id": "algoritmo_3_malattia_localizzata_operabilita_biologica_anatomica_funzion",
+      "file": "algoritmo_3_malattia_localizzata_operabilita_biologica_anatomica_funzion_1.md",
+      "algoritmo": "Malattia localizzata - Gestione terapeutica",
+      "percorso": "Malattia localizzata > Operabilita biologica, anatomica, funzionale > Chirurgia > Stadio II-III > Indicazione a chemioterapia adiuvante? > EGFR/ALK wild-type, PD-L1 uguale o superiore al 50% > Chemioterapia a base di platino > Atezolizumab per 1 anno",
+      "token_estimate": 261,
+      "cross_ref": null
+    },
+    {
+      "chunk_id": "algoritmo_3_malattia_localizzata_operabilita_biologica_anatomica_funzion",
+      "file": "algoritmo_3_malattia_localizzata_operabilita_biologica_anatomica_funzion_2.md",
+      "algoritmo": "Malattia localizzata - Gestione terapeutica",
+      "percorso": "Malattia localizzata > Operabilita biologica, anatomica, funzionale > Chirurgia > Stadio II-III > Indicazione a chemioterapia adiuvante? > EGFR/ALK wild-type, PD-L1 inferiore al 50% > Chemioterapia a base di platino > Follow-up",
+      "token_estimate": 244,
+      "cross_ref": null
+    },
+    {
+      "chunk_id": "algoritmo_3_malattia_localizzata_operabilita_biologica_anatomica_funzion",
+      "file": "algoritmo_3_malattia_localizzata_operabilita_biologica_anatomica_funzion_3.md",
+      "algoritmo": "Malattia localizzata - Gestione terapeutica",
+      "percorso": "Malattia localizzata > Operabilita biologica, anatomica, funzionale > Chirurgia > Stadio II-III > Indicazione a chemioterapia adiuvante? > Follow-up",
+      "token_estimate": 184,
+      "cross_ref": null
+    },
+    {
+      "chunk_id": "algoritmo_3_malattia_localizzata_operabilita_biologica_anatomica_funzion",
+      "file": "algoritmo_3_malattia_localizzata_operabilita_biologica_anatomica_funzion_4.md",
+      "algoritmo": "Malattia localizzata - Gestione terapeutica",
+      "percorso": "Malattia localizzata > Operabilita biologica, anatomica, funzionale > Radioterapia SBRT > Stadio I > Follow-up",
+      "token_estimate": 153,
+      "cross_ref": null
+    },
+    {
+      "chunk_id": "algoritmo_4_malattia_localmente_avanzata_non_resecabile_chemio_radiotera",
+      "file": "algoritmo_4_malattia_localmente_avanzata_non_resecabile_chemio_radiotera_0.md",
+      "algoritmo": "Malattia localmente avanzata - NSCLC",
+      "percorso": "Malattia localmente avanzata > Non resecabile > Chemio-radioterapia > Consolidamento con durvalumab, se PD-L1 uguale o superiore all'1%",
+      "token_estimate": 183,
+      "cross_ref": null
+    },
+    {
+      "chunk_id": "algoritmo_4_malattia_localmente_avanzata_resecabile_chemioterapia_o_chem",
+      "file": "algoritmo_4_malattia_localmente_avanzata_resecabile_chemioterapia_o_chem_1.md",
+      "algoritmo": "Malattia localmente avanzata - NSCLC",
+      "percorso": "Malattia localmente avanzata > Resecabile > Chemioterapia o chemio-radioterapia neoadiuvante > Chirurgia",
+      "token_estimate": 147,
+      "cross_ref": null
+    },
+    {
+      "chunk_id": "algoritmo_4_malattia_localmente_avanzata_resecabile_chirurgia_algoritmo_",
+      "file": "algoritmo_4_malattia_localmente_avanzata_resecabile_chirurgia_algoritmo__2.md",
+      "algoritmo": "Malattia localmente avanzata - NSCLC",
+      "percorso": "Malattia localmente avanzata > Resecabile > Chirurgia > ALGORITMO 3 - NSCLC Stadio Precoce",
+      "token_estimate": 146,
+      "cross_ref": null
+    },
+    {
+      "chunk_id": "algoritmo_5_alterazioni_molecolari_specifiche_inserzioni_esone_20_di_egf",
+      "file": "algoritmo_5_alterazioni_molecolari_specifiche_inserzioni_esone_20_di_egf_0.md",
+      "algoritmo": "Trattamento per alterazioni molecolari specifiche - I linea e progressione",
+      "percorso": "Alterazioni molecolari specifiche > Inserzioni esone 20 di EGFR > Chemioterapia a base di platino > Amivantamab",
+      "token_estimate": 175,
+      "cross_ref": null
+    },
+    {
+      "chunk_id": "algoritmo_5_alterazioni_molecolari_specifiche_mutazioni_classiche_di_egf",
+      "file": "algoritmo_5_alterazioni_molecolari_specifiche_mutazioni_classiche_di_egf_1.md",
+      "algoritmo": "Trattamento per alterazioni molecolari specifiche - I linea e progressione",
+      "percorso": "Alterazioni molecolari specifiche > Mutazioni classiche di EGFR > Osimertinib > Chemioterapia a base di platino",
+      "token_estimate": 175,
+      "cross_ref": null
+    },
+    {
+      "chunk_id": "algoritmo_5_alterazioni_molecolari_specifiche_mutazioni_di_braf_v600_dab",
+      "file": "algoritmo_5_alterazioni_molecolari_specifiche_mutazioni_di_braf_v600_dab_2.md",
+      "algoritmo": "Trattamento per alterazioni molecolari specifiche - I linea e progressione",
+      "percorso": "Alterazioni molecolari specifiche > Mutazioni di BRAF-V600 > Dabrafenib con trametinib > Immunoterapia e/o chemioterapia a base di platino",
+      "token_estimate": 195,
+      "cross_ref": null
+    },
+    {
+      "chunk_id": "algoritmo_5_alterazioni_molecolari_specifiche_riarrangiamenti_di_ntrk_en",
+      "file": "algoritmo_5_alterazioni_molecolari_specifiche_riarrangiamenti_di_ntrk_en_3.md",
+      "algoritmo": "Trattamento per alterazioni molecolari specifiche - I linea e progressione",
+      "percorso": "Alterazioni molecolari specifiche > Riarrangiamenti di NTRK > Entrectinib, larotrectinib > Chemioterapia a base di platino",
+      "token_estimate": 183,
+      "cross_ref": null
+    },
+    {
+      "chunk_id": "algoritmo_5_alterazioni_molecolari_specifiche_mutazioni_non_comuni_di_eg",
+      "file": "algoritmo_5_alterazioni_molecolari_specifiche_mutazioni_non_comuni_di_eg_4.md",
+      "algoritmo": "Trattamento per alterazioni molecolari specifiche - I linea e progressione",
+      "percorso": "Alterazioni molecolari specifiche > Mutazioni non comuni di EGFR, esoni 18-21, escluso esone 20 > Afatinib, osimertinib > Chemioterapia a base di platino",
+      "token_estimate": 206,
+      "cross_ref": null
+    },
+    {
+      "chunk_id": "algoritmo_5_alterazioni_molecolari_specifiche_mutazione_krasp_g12c_immun",
+      "file": "algoritmo_5_alterazioni_molecolari_specifiche_mutazione_krasp_g12c_immun_5.md",
+      "algoritmo": "Trattamento per alterazioni molecolari specifiche - I linea e progressione",
+      "percorso": "Alterazioni molecolari specifiche > Mutazione KRASp.G12C > Immunoterapia e/o chemioterapia a base di platino > Sotorasib",
+      "token_estimate": 182,
+      "cross_ref": null
+    },
+    {
+      "chunk_id": "algoritmo_5_alterazioni_molecolari_specifiche_riarrangiamenti_di_ret_che",
+      "file": "algoritmo_5_alterazioni_molecolari_specifiche_riarrangiamenti_di_ret_che_6.md",
+      "algoritmo": "Trattamento per alterazioni molecolari specifiche - I linea e progressione",
+      "percorso": "Alterazioni molecolari specifiche > Riarrangiamenti di RET > Chemioterapia a base di platino > Selpercatinib",
+      "token_estimate": 173,
+      "cross_ref": null
+    },
+    {
+      "chunk_id": "algoritmo_5_alterazioni_molecolari_specifiche_riarrangiamenti_di_alk_ale",
+      "file": "algoritmo_5_alterazioni_molecolari_specifiche_riarrangiamenti_di_alk_ale_7.md",
+      "algoritmo": "Trattamento per alterazioni molecolari specifiche - I linea e progressione",
+      "percorso": "Alterazioni molecolari specifiche > Riarrangiamenti di ALK > Alectinib, brigatinib, lorlatinib > Lorlatinib o chemioterapia a base di platino",
+      "token_estimate": 197,
+      "cross_ref": null
+    },
+    {
+      "chunk_id": "algoritmo_5_alterazioni_molecolari_specifiche_riarrangiamenti_di_ros1_en",
+      "file": "algoritmo_5_alterazioni_molecolari_specifiche_riarrangiamenti_di_ros1_en_8.md",
+      "algoritmo": "Trattamento per alterazioni molecolari specifiche - I linea e progressione",
+      "percorso": "Alterazioni molecolari specifiche > Riarrangiamenti di ROS1 > Entrectinib, crizotinib > Chemioterapia a base di platino",
+      "token_estimate": 181,
+      "cross_ref": null
+    },
+    {
+      "chunk_id": "algoritmo_5_alterazioni_molecolari_specifiche_skipping_esone_14_di_met_i",
+      "file": "algoritmo_5_alterazioni_molecolari_specifiche_skipping_esone_14_di_met_i_9.md",
+      "algoritmo": "Trattamento per alterazioni molecolari specifiche - I linea e progressione",
+      "percorso": "Alterazioni molecolari specifiche > Skipping esone 14 di MET > Immunoterapia e/o chemioterapia a base di platino > Capmatinib, tepotinib",
+      "token_estimate": 194,
+      "cross_ref": null
+    },
+    {
+      "chunk_id": "algoritmo_6_selezione_per_pd_l1_e_istologia_pd_l1_uguale_o_superiore_al_",
+      "file": "algoritmo_6_selezione_per_pd_l1_e_istologia_pd_l1_uguale_o_superiore_al__0.md",
+      "algoritmo": "Algoritmo 2",
+      "percorso": "Selezione per PD-L1 e istologia > PD-L1 uguale o superiore al 50% > Pembrolizumab, cemiplimab, atezolizumab > Chemioterapia a base di platino",
+      "token_estimate": 175,
+      "cross_ref": null
+    },
+    {
+      "chunk_id": "algoritmo_6_selezione_per_pd_l1_e_istologia_pd_l1_inferiore_al_50_o_non_",
+      "file": "algoritmo_6_selezione_per_pd_l1_e_istologia_pd_l1_inferiore_al_50_o_non__1.md",
+      "algoritmo": "Algoritmo 2",
+      "percorso": "Selezione per PD-L1 e istologia > PD-L1 inferiore al 50% o non determinabile, istologia non-squamosa > Chemioterapia a base di platino con pemetrexed e pembrolizumab > Mantenimento: pemetrexed con pembrolizumab",
+      "token_estimate": 240,
+      "cross_ref": null
+    },
+    {
+      "chunk_id": "algoritmo_6_selezione_per_pd_l1_e_istologia_pd_l1_inferiore_al_50_o_non_",
+      "file": "algoritmo_6_selezione_per_pd_l1_e_istologia_pd_l1_inferiore_al_50_o_non__2.md",
+      "algoritmo": "Algoritmo 2",
+      "percorso": "Selezione per PD-L1 e istologia > PD-L1 inferiore al 50% o non determinabile, istologia non-squamosa > Chemioterapia a base di platino con pemetrexed e pembrolizumab > Docetaxel con nintedanib, oppure nivolumab, pembrolizumab o atezolizumab",
+      "token_estimate": 261,
+      "cross_ref": null
+    },
+    {
+      "chunk_id": "algoritmo_6_selezione_per_pd_l1_e_istologia_pd_l1_inferiore_al_50_o_non_",
+      "file": "algoritmo_6_selezione_per_pd_l1_e_istologia_pd_l1_inferiore_al_50_o_non__3.md",
+      "algoritmo": "Algoritmo 2",
+      "percorso": "Selezione per PD-L1 e istologia > PD-L1 inferiore al 50% o non determinabile, squamosa e non-squamosa > Nivolumab con ipilimumab e chemioterapia a base di platino > Mantenimento: nivolumab con ipilimumab",
+      "token_estimate": 235,
+      "cross_ref": null
+    },
+    {
+      "chunk_id": "algoritmo_6_selezione_per_pd_l1_e_istologia_pd_l1_inferiore_al_50_o_non_",
+      "file": "algoritmo_6_selezione_per_pd_l1_e_istologia_pd_l1_inferiore_al_50_o_non__4.md",
+      "algoritmo": "Algoritmo 2",
+      "percorso": "Selezione per PD-L1 e istologia > PD-L1 inferiore al 50% o non determinabile, squamosa e non-squamosa > Nivolumab con ipilimumab e chemioterapia a base di platino > Docetaxel con nivolumab, pembrolizumab o atezolizumab",
+      "token_estimate": 244,
+      "cross_ref": null
+    },
+    {
+      "chunk_id": "algoritmo_6_selezione_per_pd_l1_e_istologia_pd_l1_dall_1_al_49_squamosa_",
+      "file": "algoritmo_6_selezione_per_pd_l1_e_istologia_pd_l1_dall_1_al_49_squamosa__5.md",
+      "algoritmo": "Algoritmo 2",
+      "percorso": "Selezione per PD-L1 e istologia > PD-L1 dall'1% al 49%, squamosa e non-squamosa > Cemiplimab con chemioterapia a base di platino > Mantenimento: cemiplimab, con o senza pemetrexed se non-squamosa",
+      "token_estimate": 224,
+      "cross_ref": null
+    },
+    {
+      "chunk_id": "algoritmo_6_selezione_per_pd_l1_e_istologia_pd_l1_dall_1_al_49_squamosa_",
+      "file": "algoritmo_6_selezione_per_pd_l1_e_istologia_pd_l1_dall_1_al_49_squamosa__6.md",
+      "algoritmo": "Algoritmo 2",
+      "percorso": "Selezione per PD-L1 e istologia > PD-L1 dall'1% al 49%, squamosa e non-squamosa > Cemiplimab con chemioterapia a base di platino > Docetaxel con nivolumab, pembrolizumab o atezolizumab",
+      "token_estimate": 213,
+      "cross_ref": null
+    },
+    {
+      "chunk_id": "algoritmo_6_selezione_per_pd_l1_e_istologia_pd_l1_inferiore_al_50_o_non_",
+      "file": "algoritmo_6_selezione_per_pd_l1_e_istologia_pd_l1_inferiore_al_50_o_non__7.md",
+      "algoritmo": "Algoritmo 2",
+      "percorso": "Selezione per PD-L1 e istologia > PD-L1 inferiore al 50% o non determinabile, istologia squamosa > Carboplatino con nab-paclitaxel e pembrolizumab > Mantenimento: pembrolizumab",
+      "token_estimate": 214,
+      "cross_ref": null
+    },
+    {
+      "chunk_id": "algoritmo_6_selezione_per_pd_l1_e_istologia_pd_l1_inferiore_al_50_o_non_",
+      "file": "algoritmo_6_selezione_per_pd_l1_e_istologia_pd_l1_inferiore_al_50_o_non__8.md",
+      "algoritmo": "Algoritmo 2",
+      "percorso": "Selezione per PD-L1 e istologia > PD-L1 inferiore al 50% o non determinabile, istologia squamosa > Carboplatino con nab-paclitaxel e pembrolizumab > Docetaxel con nivolumab, pembrolizumab o atezolizumab",
+      "token_estimate": 231,
+      "cross_ref": null
+    },
+    {
+      "chunk_id": "algoritmo_7_presentazione_clinica_malattia_estesa_chemioterapia_a_base_d",
+      "file": "algoritmo_7_presentazione_clinica_malattia_estesa_chemioterapia_a_base_d_0.md",
+      "algoritmo": "Algoritmo 2",
+      "percorso": "Presentazione clinica > Malattia estesa > Chemioterapia a base di platino con etoposide e atezolizumab o durvalumab > Mantenimento con atezolizumab o durvalumab, con o senza PCI",
+      "token_estimate": 191,
+      "cross_ref": null
+    },
+    {
+      "chunk_id": "algoritmo_7_presentazione_clinica_malattia_estesa_chemioterapia_a_base_d",
+      "file": "algoritmo_7_presentazione_clinica_malattia_estesa_chemioterapia_a_base_d_1.md",
+      "algoritmo": "Algoritmo 2",
+      "percorso": "Presentazione clinica > Malattia estesa > Chemioterapia a base di platino con etoposide e atezolizumab o durvalumab > Terapia di II linea",
+      "token_estimate": 159,
+      "cross_ref": null
+    },
+    {
+      "chunk_id": "algoritmo_7_presentazione_clinica_malattia_limitata_chemioterapia_con_ra",
+      "file": "algoritmo_7_presentazione_clinica_malattia_limitata_chemioterapia_con_ra_2.md",
+      "algoritmo": "Algoritmo 2",
+      "percorso": "Presentazione clinica > Malattia limitata > Chemioterapia con radioterapia > Follow-up, con o senza PCI",
+      "token_estimate": 136,
+      "cross_ref": null
+    },
+    {
+      "chunk_id": "algoritmo_7_presentazione_clinica_malattia_limitata_chemioterapia_con_ra",
+      "file": "algoritmo_7_presentazione_clinica_malattia_limitata_chemioterapia_con_ra_3.md",
+      "algoritmo": "Algoritmo 2",
+      "percorso": "Presentazione clinica > Malattia limitata > Chemioterapia con radioterapia > Terapia di II linea",
+      "token_estimate": 129,
+      "cross_ref": null
+    },
+    {
+      "chunk_id": "algoritmo_7_presentazione_clinica_progressione_durante_o_dopo_la_i_linea",
+      "file": "algoritmo_7_presentazione_clinica_progressione_durante_o_dopo_la_i_linea_4.md",
+      "algoritmo": "Algoritmo 2",
+      "percorso": "Presentazione clinica > Progressione durante o dopo la I linea > Valutazione intervallo dalla fine della chemioterapia precedente > Topotecan, altro agente attivo o studio clinico",
+      "token_estimate": 195,
+      "cross_ref": null
+    },
+    {
+      "chunk_id": "algoritmo_7_presentazione_clinica_progressione_durante_o_dopo_la_i_linea",
+      "file": "algoritmo_7_presentazione_clinica_progressione_durante_o_dopo_la_i_linea_5.md",
+      "algoritmo": "Algoritmo 2",
+      "percorso": "Presentazione clinica > Progressione durante o dopo la I linea > Valutazione intervallo dalla fine della chemioterapia precedente > Re-challenge con chemioterapia a base di platino",
+      "token_estimate": 196,
+      "cross_ref": null
+    }
+  ]
+}
