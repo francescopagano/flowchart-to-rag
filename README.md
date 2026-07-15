@@ -1,4 +1,4 @@
-#Flow to RAG
+# Flow to RAG
 
 Extract clinical decision flowcharts from rasterized PDFs and convert them into structured, RAG-ready text chunks, preserving the decision logic that standard OCR destroys.
 ---
